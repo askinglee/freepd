@@ -1,0 +1,69 @@
+baseURL = 'https://freepd.cn/'
+languageCode = 'zh-cn'
+title = '免费字体下载 · 可商用 · 无套路 | FreePD'
+theme = 'PaperMod'
+
+# 增强本地调试支持
+relativeURLs = true
+canonifyURLs = false
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[params]
+    env = 'production'
+    title = 'FreePD'
+    description = 'FreePD 提供高质量、可商用的免费字体下载，涵盖中文字体、英文字体与设计字体，适合设计师、开发者、自媒体与学生使用。'
+    keywords = ['免费字体', '免费商用字体', '中文字体下载', '英文字体下载', 'free fonts']
+    author = 'FreePD'
+    
+    # PaperMod specific params
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    disableSpecial1stPost = false
+    disableScrollToTop = false
+    comments = false
+    hidemenu = false
+    showtoc = true
+    tocopen = false
+
+    [params.label]
+        text = "FreePD"
+
+    [params.fuseOpts]
+        isCaseSensitive = false
+        shouldSort = true
+        location = 0
+        distance = 100
+        threshold = 0.4
+        minMatchCharLength = 0
+        keys = ["title", "permalink", "summary", "content"]
+
+
+[[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 10
+
+[[menu.main]]
+    name = "免费字体"
+    url = "/fonts/"
+    weight = 20
+
+[[menu.main]]
+    name = "PDF工具"
+    url = "/tools/"
+    weight = 30
+
+[[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 40
+
+[[menu.main]]
+    name = "搜索"
+    url = "/search/"
+    weight = 50
