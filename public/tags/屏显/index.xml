@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/fonts/oppo-sans/</guid>
       <description>OPPO Sans 是 OPPO 品牌定制字体，由汉仪字库设计。它具备极简、现代的视觉风格，字重丰富，完美适配屏幕显示，且对全球用户永久免费商用。</description>
     </item>
+    <item>
+      <title>MiSans - 小米定制全功能现代免费商用字体</title>
+      <link>http://localhost:1313/fonts/misans/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/misans/</guid>
+      <description>MiSans 是小米品牌定制字体，随 MIUI 13 发布。它具备高度的屏显清晰度和丰富的 OpenType 特性，在不同大小下都有极致表现，且对全社会永久免费商用。</description>
+    </item>
   </channel>
 </rss>

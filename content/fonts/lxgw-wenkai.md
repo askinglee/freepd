@@ -8,7 +8,7 @@ categories: ["人文楷体", "中文字体", "免费字体"]
 weight: 35
 font_license: "SIL Open Font License 1.1 (绝对免费)"
 author_url: "https://github.com/lxgw/LxgwWenKai"
-download_url: "https://pan.lanzouo.com/s/lxgw-wenkai" # 示例链接
+download_url: "https://pan.baidu.com/s/1-eNVfL9CYmjn6Ow419cdaA?pwd=fe5x"
 preview_image: "/images/fonts/lxgw-wenkai-preview.png"
 showToc: true
 tocOpen: true
@@ -63,8 +63,8 @@ tocOpen: true
 
 ## 下载地址
 
+- [百度网盘下载](https://pan.baidu.com/s/1-eNVfL9CYmjn6Ow419cdaA?pwd=fe5x)
 - [GitHub 官方项目地址](https://github.com/lxgw/LxgwWenKai/releases)
-- [开发者个人主页](https://lxgw.github.io/)
 
 ## 你可能还会喜欢
 

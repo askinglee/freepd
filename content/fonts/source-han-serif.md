@@ -8,7 +8,7 @@ categories: ["经典宋体", "中文字体", "免费字体"]
 weight: 15
 font_license: "SIL Open Font License 1.1 (绝对免费)"
 author_url: "https://github.com/adobe-fonts/source-han-serif"
-download_url: "https://pan.lanzouo.com/s/siyuan-serif" # 示例链接
+download_url: "https://pan.baidu.com/s/1OJMDe0vZfsHNYc6HYT5YvQ?pwd=dj3w" # 示例链接
 preview_image: "/images/fonts/source-han-serif-preview.png"
 showToc: true
 tocOpen: true
@@ -63,9 +63,8 @@ tocOpen: true
 
 ## 下载地址
 
+- [百度网盘下载](https://pan.baidu.com/s/1OJMDe0vZfsHNYc6HYT5YvQ?pwd=dj3w)
 - [GitHub 官方发布页](https://github.com/adobe-fonts/source-han-serif/releases)
-- [Google Fonts](https://fonts.google.com/specimen/Noto+Serif+SC)
-- [Adobe Fonts](https://fonts.adobe.com/fonts/source-han-serif-simplified-chinese)
 
 ## 你可能还会喜欢
 

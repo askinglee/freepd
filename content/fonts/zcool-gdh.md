@@ -8,7 +8,7 @@ categories: ["创意设计", "中文字体", "免费字体"]
 weight: 30
 font_license: "站酷公益字体授权 (免费商用)"
 author_url: "https://www.zcool.com.cn/special/zcoolfonts/"
-download_url: "https://pan.lanzouo.com/s/zcool-gdh" # 示例链接
+download_url: "https://pan.baidu.com/s/1mOYvD9YzlH5jmFxMCEgcPQ?pwd=in3b"
 preview_image: "/images/fonts/zcool-gdh-preview.png"
 showToc: true
 tocOpen: true
@@ -63,8 +63,8 @@ tocOpen: true
 
 ## 下载地址
 
+- [百度网盘下载](https://pan.baidu.com/s/1mOYvD9YzlH5jmFxMCEgcPQ?pwd=in3b)
 - [站酷官方主题页](https://www.zcool.com.cn/special/zcoolfonts/)
-- [FreePD 备用下载](https://pan.lanzouo.com/s/zcool-gdh)
 
 ## 你可能还会喜欢
 

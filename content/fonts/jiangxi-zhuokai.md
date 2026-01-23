@@ -7,8 +7,8 @@ tags: ["可商用", "楷体", "手写", "文艺", "设计"]
 categories: ["人文楷体", "中文字体", "免费字体"]
 weight: 50
 font_license: "设计师授权 (免费商用)"
-author_url: "https://mp.weixin.qq.com/s/Gk0-j8Y5p5_S5p5p5p5p5Q" # 示例链接
-download_url: "https://pan.lanzouo.com/s/jiangxi-zhuokai" # 示例链接
+author_url: "/fonts/jiangxi-zhuokai" # 作者主页确实，用本站的URL
+download_url: "https://pan.baidu.com/s/1GHtBGetL3OthEhyY6_1zsg?pwd=qaxs"
 preview_image: "/images/fonts/jiangxi-zhuokai-preview.png"
 showToc: true
 tocOpen: true
@@ -63,8 +63,7 @@ tocOpen: true
 
 ## 下载地址
 
-- [设计师官方发布渠道（煜臣设计）](https://mp.weixin.qq.com/s/Gk0-j8Y5p5_S5p5p5p5p5Q)
-- [FreePD 备用下载](https://pan.lanzouo.com/s/jiangxi-zhuokai)
+- [百度网盘](https://pan.baidu.com/s/1GHtBGetL3OthEhyY6_1zsg?pwd=qaxs)
 
 ## 你可能还会喜欢
 

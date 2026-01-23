@@ -8,7 +8,7 @@ categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 10
 font_license: "SIL Open Font License 1.1 (绝对免费)"
 author_url: "https://github.com/adobe-fonts/source-han-sans"
-download_url: "https://pan.lanzouo.com/s/siyuan-sans" # 示例链接
+download_url: "https://pan.baidu.com/s/1H_qitBdVCtZZUVUEj9zoSg?pwd=nbnj"
 preview_image: "/images/fonts/source-han-sans-preview.png"
 showToc: true
 tocOpen: true
@@ -65,9 +65,9 @@ tocOpen: true
 
 ## 下载地址
 
+- [百度网盘](https://pan.baidu.com/s/1H_qitBdVCtZZUVUEj9zoSg?pwd=nbnj)
 - [GitHub 官方直连](https://github.com/adobe-fonts/source-han-sans/releases)
-- [Adobe Typekit](https://typekit.com/fonts/source-han-sans-simplified-chinese)
-- [Google Fonts](https://fonts.google.com/specimen/Source+Han+Sans+SC)
+
 
 ## 你可能还会喜欢
 

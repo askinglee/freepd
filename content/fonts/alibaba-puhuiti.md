@@ -8,7 +8,7 @@ categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 20
 font_license: "阿里巴巴普惠体法律声明 (免费商用)"
 author_url: "https://www.alibabafonts.com/"
-download_url: "https://pan.lanzouo.com/s/alibaba-puhuiti" # 示例链接
+download_url: "https://pan.baidu.com/s/1e_d9FqThqJnM-PmQQ3GB2w?pwd=axst"
 preview_image: "/images/fonts/alibaba-puhuiti-preview.png"
 showToc: true
 tocOpen: true
@@ -61,8 +61,8 @@ tocOpen: true
 
 ## 下载地址
 
+- [百度网盘下载](https://pan.baidu.com/s/1e_d9FqThqJnM-PmQQ3GB2w?pwd=axst)
 - [阿里巴巴字体素材平台官方下载](https://www.alibabafonts.com/)
-- [FreePD 备用下载](https://pan.lanzouo.com/s/alibaba-puhuiti)
 
 ## 你可能还会喜欢
 

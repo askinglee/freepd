@@ -7,8 +7,8 @@ tags: ["可商用", "黑体", "Xiaomi", "设计", "屏显", "UI"]
 categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 28
 font_license: "MiSans 字体授权协议 (免费商用)"
-author_url: "https://hyperos.mi.com/font-download"
-download_url: "https://pan.lanzouo.com/s/misans" # 示例链接
+author_url: "https://hyperos.mi.com/font/zh/"
+download_url: "https://pan.baidu.com/s/1NNJ5m2klcctyVvgnF4pfVA?pwd=v72a"
 preview_image: "/images/fonts/misans-preview.png"
 showToc: true
 tocOpen: true
@@ -63,8 +63,8 @@ MiSans 拥有 10 个字重，能够完美适配从超大标题到微型注解的
 
 ## 下载地址
 
-- [小米澎湃 OS 官网字体下载](https://hyperos.mi.com/font-download)
-- [FreePD 备用下载](https://pan.lanzouo.com/s/misans)
+- [百度网盘下载](https://pan.baidu.com/s/1NNJ5m2klcctyVvgnF4pfVA?pwd=v72a)
+- [小米澎湃 OS 官网字体下载](https://hyperos.mi.com/font/zh/download/)
 
 ## 你可能还会喜欢
 

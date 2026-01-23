@@ -2,32 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>免费字体 on 免费字体下载 · 可商用 · 无套路 | FreePD</title>
-    <link>https://freepd.cn/categories/%E5%85%8D%E8%B4%B9%E5%AD%97%E4%BD%93/</link>
+    <link>http://localhost:1313/categories/%E5%85%8D%E8%B4%B9%E5%AD%97%E4%BD%93/</link>
     <description>Recent content in 免费字体 on 免费字体下载 · 可商用 · 无套路 | FreePD</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://freepd.cn/categories/%E5%85%8D%E8%B4%B9%E5%AD%97%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%E5%85%8D%E8%B4%B9%E5%AD%97%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>思源黑体 (Source Han Sans) - 谷歌/Adobe联合推出全能免费商用字体</title>
-      <link>https://freepd.cn/fonts/source-han-sans/</link>
+      <link>http://localhost:1313/fonts/source-han-sans/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/fonts/source-han-sans/</guid>
+      <guid>http://localhost:1313/fonts/source-han-sans/</guid>
       <description>思源黑体免费下载。支持简体中文、繁体中文、日文、韩文。由Google和Adobe合作开发，永久免费可商用，无版权风险。适合网页、印刷、PPT 与设计项目。</description>
     </item>
     <item>
-      <title>阿里巴巴普惠体 (Alibaba PuHuiTi) - 全球永久免费商用</title>
-      <link>https://freepd.cn/fonts/alibaba-puhuiti/</link>
+      <title>思源宋体 (Source Han Serif) - 谷歌/Adobe 再次联手，重塑中文排版美学</title>
+      <link>http://localhost:1313/fonts/source-han-serif/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/fonts/alibaba-puhuiti/</guid>
+      <guid>http://localhost:1313/fonts/source-han-serif/</guid>
+      <description>思源宋体是 Adobe 与 Google 合作开发的开源宋体字轴。作为思源黑体的同伴，它专为长文阅读设计，在印刷和屏幕显示上都有极佳表现。完美支持简繁日韩，永久免费商用。</description>
+    </item>
+    <item>
+      <title>阿里巴巴普惠体 (Alibaba PuHuiTi) - 全球永久免费商用</title>
+      <link>http://localhost:1313/fonts/alibaba-puhuiti/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/alibaba-puhuiti/</guid>
       <description>阿里巴巴普惠体是阿里巴巴推出的一款免费商用字体，旨在为全球商家提供设计助力，包含多种字重，覆盖 172 个语种。是电商设计、品牌宣传的首选字体。</description>
     </item>
     <item>
-      <title>站酷高端黑 (ZCOOL GDH) - 设计感十足的免费商用创意黑体</title>
-      <link>https://freepd.cn/fonts/zcool-gdh/</link>
+      <title>OPPO Sans - 现代感十足的品牌定制免费商用字体</title>
+      <link>http://localhost:1313/fonts/oppo-sans/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/fonts/zcool-gdh/</guid>
+      <guid>http://localhost:1313/fonts/oppo-sans/</guid>
+      <description>OPPO Sans 是 OPPO 品牌定制字体，由汉仪字库设计。它具备极简、现代的视觉风格，字重丰富，完美适配屏幕显示，且对全球用户永久免费商用。</description>
+    </item>
+    <item>
+      <title>HarmonyOS Sans - 华为定制全场景免费商用字体</title>
+      <link>http://localhost:1313/fonts/harmonyos-sans/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/harmonyos-sans/</guid>
+      <description>HarmonyOS Sans 是华为品牌定制字体。它是一款专为多设备全场景设计的字体，支持动态字重调节，在手机、平板、手表等各种屏幕上都能提供极佳的阅读体验，全球免费商用。</description>
+    </item>
+    <item>
+      <title>MiSans - 小米定制全功能现代免费商用字体</title>
+      <link>http://localhost:1313/fonts/misans/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/misans/</guid>
+      <description>MiSans 是小米品牌定制字体，随 MIUI 13 发布。它具备高度的屏显清晰度和丰富的 OpenType 特性，在不同大小下都有极致表现，且对全社会永久免费商用。</description>
+    </item>
+    <item>
+      <title>站酷高端黑 (ZCOOL GDH) - 设计感十足的免费商用创意黑体</title>
+      <link>http://localhost:1313/fonts/zcool-gdh/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/zcool-gdh/</guid>
       <description>站酷高端黑是站酷网推出的一款免费商用字体，由多位设计师参与创作，字形硬朗、现代且富有设计感，是网页设计与平面设计中的人气之选。</description>
+    </item>
+    <item>
+      <title>霞鹜文楷 (LXGW WenKai) - 兼具人文气息与硬笔书法美感的开源中文楷体</title>
+      <link>http://localhost:1313/fonts/lxgw-wenkai/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/lxgw-wenkai/</guid>
+      <description>霞鹜文楷是一款基于 Klee One 改造的开源中文字体，融合了楷书的温润与硬笔书法的刚劲。它解决了传统楷体在屏幕上显示模糊的问题，是电子书阅读、诗歌文学排版的绝佳选择。</description>
+    </item>
+    <item>
+      <title>庞门正道标题体 - 设计师人手必备的霸气免费商用标题字</title>
+      <link>http://localhost:1313/fonts/pangmen-zedao-biaoti/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/pangmen-zedao-biaoti/</guid>
+      <description>庞门正道标题体是由知名设计公众号“庞门正道”联合多位设计师推出的免费商用字体。字形硬朗、挺拔、视觉冲击力极强，是商业海报、电商封面、视频标题的绝对神器。</description>
+    </item>
+    <item>
+      <title>杨任东竹石体 - 温暖有力且支持 7 字重的开源手写体</title>
+      <link>http://localhost:1313/fonts/yrd-zhushi/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/yrd-zhushi/</guid>
+      <description>杨任东竹石体是一款由杨任东先生创作并开源的字型。它完美融合了手写的温润与竹子的坚韧风格，且罕见地支持了从纤细到粗壮的 7 个字重，是文艺、古风与生活方式设计的绝佳选择。</description>
+    </item>
+    <item>
+      <title>江西拙楷体 - 自然拙朴、富有生活气息的免费商用手写楷体</title>
+      <link>http://localhost:1313/fonts/jiangxi-zhuokai/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/jiangxi-zhuokai/</guid>
+      <description>江西拙楷体是由设计师黄煜臣创作的一款手写字体。它保留了毛笔书写的自然质感，形拙而神不拙，非常适合用于温暖、质朴、文艺感十足的设计场景，且永久免费商用。</description>
     </item>
   </channel>
 </rss>

@@ -32,7 +32,7 @@ FreePD 是一个**资源聚合与导航站点**。我们通过人工筛选和整
 
 FreePD 充分尊重原创者的智慧成果。如果您认为本站链接的资源侵犯了您的合法权益，请通过以下方式联系我们：
 
-- **联系邮箱**：[legal@freepd.cn](mailto:legal@freepd.cn) (示例)
+- **联系邮箱**：[legal@freepd.cn](mailto:legal@freepd.cn)
 
 **请在邮件中包含：**
 - 您的身份证明及对涉嫌侵权作品的拥有权证明。

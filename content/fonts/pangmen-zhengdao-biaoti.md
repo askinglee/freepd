@@ -2,14 +2,14 @@
 title: "庞门正道标题体 - 设计师人手必备的霸气免费商用标题字"
 date: 2026-01-22
 description: "庞门正道标题体是由知名设计公众号“庞门正道”联合多位设计师推出的免费商用字体。字形硬朗、挺拔、视觉冲击力极强，是商业海报、电商封面、视频标题的绝对神器。"
-slug: pangmen-zedao-biaoti
+slug: pangmen-zhengdao-biaoti
 tags: ["可商用", "黑体", "标题", "设计", "电商"]
 categories: ["创意设计", "中文字体", "免费字体"]
 weight: 40
 font_license: "庞门正道官方授权 (免费商用)"
-author_url: "https://mp.weixin.qq.com/s/SIdV_W06_lYvK917o6L9WA"
-download_url: "https://pan.lanzouo.com/s/pangmen-biaoti" # 示例链接
-preview_image: "/images/fonts/pangmen-zedao-biaoti-preview.png"
+author_url: "/fonts/pangmen-zhengdao-biaoti" # 作者主页确实，用本站的URL
+download_url: "https://pan.baidu.com/s/1gtL4xgS07ReaktqHKK3gwQ?pwd=4mpw"
+preview_image: "/images/fonts/pangmen-zhengdao-biaoti-preview.png"
 showToc: true
 tocOpen: true
 ---
@@ -22,7 +22,7 @@ tocOpen: true
 
 ## 字体预览
 
-![庞门正道标题体](/images/fonts/pangmen-zedao-biaoti-preview.png)
+![庞门正道标题体](/images/fonts/pangmen-zhengdao-biaoti-preview.png)
 
 庞门正道标题体在处理大面积色块或深色背景时表现尤为抢眼，其倾斜感和硬朗的边缘处理让设计作品充满张力。
 
@@ -55,7 +55,7 @@ tocOpen: true
 ## 字体信息
 
 - 字体名称：庞门正道标题体
-- 英文名称：PangMenZeDao-BiaoTiTi
+- 英文名称：PangMenZhengDao-BiaoTiTi
 - 字体类型：创意标题黑体
 - 发起人：庞门正道 (阿门)
 - 授权方式：官方公开免费商用声明
@@ -63,8 +63,7 @@ tocOpen: true
 
 ## 下载地址
 
-- [庞门正道官方发布文（推荐关注）](https://mp.weixin.qq.com/s/SIdV_W06_lYvK917o6L9WA)
-- [FreePD 备用下载](https://pan.lanzouo.com/s/pangmen-biaoti)
+- [百度网盘下载](https://pan.baidu.com/s/1gtL4xgS07ReaktqHKK3gwQ?pwd=4mpw)
 
 ## 你可能还会喜欢
 

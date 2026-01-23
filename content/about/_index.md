@@ -23,6 +23,6 @@ layout: "single"
 ## 联系我们
 
 您可以随时通过以下方式联系我们：
-- Email: contact@freepd.cn (拟定)
+- Email: contact@freepd.cn
 
 感谢您的支持！

@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/fonts/lxgw-wenkai/</guid>
       <description>霞鹜文楷是一款基于 Klee One 改造的开源中文字体，融合了楷书的温润与硬笔书法的刚劲。它解决了传统楷体在屏幕上显示模糊的问题，是电子书阅读、诗歌文学排版的绝佳选择。</description>
     </item>
+    <item>
+      <title>江西拙楷体 - 自然拙朴、富有生活气息的免费商用手写楷体</title>
+      <link>http://localhost:1313/fonts/jiangxi-zhuokai/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fonts/jiangxi-zhuokai/</guid>
+      <description>江西拙楷体是由设计师黄煜臣创作的一款手写字体。它保留了毛笔书写的自然质感，形拙而神不拙，非常适合用于温暖、质朴、文艺感十足的设计场景，且永久免费商用。</description>
+    </item>
   </channel>
 </rss>

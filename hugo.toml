@@ -33,17 +33,20 @@ canonifyURLs = false
     [params.label]
         text = "FreePD"
 
-    [params.fuseOpts]
-        isCaseSensitive = false
-        shouldSort = true
-        location = 0
-        distance = 100
-        threshold = 0.4
-        minMatchCharLength = 0
-        keys = ["title", "permalink", "summary", "content"]
+     [params.fuseOpts]
+         isCaseSensitive = false
+         shouldSort = true
+         location = 0
+         distance = 100
+         threshold = 0.4
+         minMatchCharLength = 0
+         keys = ["title", "permalink", "summary", "content"]
+
+     [params.footer]
+         text = "[沪ICP备2022014397号](https://beian.miit.gov.cn/)"
 
 
-[[menu.main]]
+ [[menu.main]]
     name = "首页"
     url = "/"
     weight = 10

@@ -2,73 +2,199 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 免费字体下载 · 可商用 · 无套路 | FreePD</title>
-    <link>https://freepd.cn/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on 免费字体下载 · 可商用 · 无套路 | FreePD</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://freepd.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adobe</title>
-      <link>https://freepd.cn/tags/adobe/</link>
+      <link>http://localhost:1313/tags/adobe/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/adobe/</guid>
+      <guid>http://localhost:1313/tags/adobe/</guid>
       <description></description>
     </item>
     <item>
       <title>Alibaba</title>
-      <link>https://freepd.cn/tags/alibaba/</link>
+      <link>http://localhost:1313/tags/alibaba/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/alibaba/</guid>
+      <guid>http://localhost:1313/tags/alibaba/</guid>
       <description></description>
     </item>
     <item>
       <title>Google</title>
-      <link>https://freepd.cn/tags/google/</link>
+      <link>http://localhost:1313/tags/google/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/google/</guid>
+      <guid>http://localhost:1313/tags/google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HarmonyOS</title>
+      <link>http://localhost:1313/tags/harmonyos/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/harmonyos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Huawei</title>
+      <link>http://localhost:1313/tags/huawei/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/huawei/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OPPO</title>
+      <link>http://localhost:1313/tags/oppo/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/oppo/</guid>
       <description></description>
     </item>
     <item>
       <title>PDF工具</title>
-      <link>https://freepd.cn/tags/pdf%E5%B7%A5%E5%85%B7/</link>
+      <link>http://localhost:1313/tags/pdf%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/pdf%E5%B7%A5%E5%85%B7/</guid>
+      <guid>http://localhost:1313/tags/pdf%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UI</title>
+      <link>http://localhost:1313/tags/ui/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xiaomi</title>
+      <link>http://localhost:1313/tags/xiaomi/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/xiaomi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人文</title>
+      <link>http://localhost:1313/tags/%E4%BA%BA%E6%96%87/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E4%BA%BA%E6%96%87/</guid>
       <description></description>
     </item>
     <item>
       <title>免费工具</title>
-      <link>https://freepd.cn/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/</link>
+      <link>http://localhost:1313/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/</guid>
+      <guid>http://localhost:1313/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>古风</title>
+      <link>http://localhost:1313/tags/%E5%8F%A4%E9%A3%8E/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%8F%A4%E9%A3%8E/</guid>
       <description></description>
     </item>
     <item>
       <title>可商用</title>
-      <link>https://freepd.cn/tags/%E5%8F%AF%E5%95%86%E7%94%A8/</link>
+      <link>http://localhost:1313/tags/%E5%8F%AF%E5%95%86%E7%94%A8/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/%E5%8F%AF%E5%95%86%E7%94%A8/</guid>
+      <guid>http://localhost:1313/tags/%E5%8F%AF%E5%95%86%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>多端适配</title>
+      <link>http://localhost:1313/tags/%E5%A4%9A%E7%AB%AF%E9%80%82%E9%85%8D/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%A4%9A%E7%AB%AF%E9%80%82%E9%85%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>屏显</title>
+      <link>http://localhost:1313/tags/%E5%B1%8F%E6%98%BE/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%B1%8F%E6%98%BE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>开源</title>
+      <link>http://localhost:1313/tags/%E5%BC%80%E6%BA%90/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%BC%80%E6%BA%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>手写</title>
+      <link>http://localhost:1313/tags/%E6%89%8B%E5%86%99/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%89%8B%E5%86%99/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>文艺</title>
+      <link>http://localhost:1313/tags/%E6%96%87%E8%89%BA/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%96%87%E8%89%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标题</title>
+      <link>http://localhost:1313/tags/%E6%A0%87%E9%A2%98/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%A0%87%E9%A2%98/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>楷体</title>
+      <link>http://localhost:1313/tags/%E6%A5%B7%E4%BD%93/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%A5%B7%E4%BD%93/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>正文</title>
+      <link>http://localhost:1313/tags/%E6%AD%A3%E6%96%87/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%AD%A3%E6%96%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>电商</title>
+      <link>http://localhost:1313/tags/%E7%94%B5%E5%95%86/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E7%94%B5%E5%95%86/</guid>
       <description></description>
     </item>
     <item>
       <title>站酷</title>
-      <link>https://freepd.cn/tags/%E7%AB%99%E9%85%B7/</link>
+      <link>http://localhost:1313/tags/%E7%AB%99%E9%85%B7/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/%E7%AB%99%E9%85%B7/</guid>
+      <guid>http://localhost:1313/tags/%E7%AB%99%E9%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>衬线体</title>
+      <link>http://localhost:1313/tags/%E8%A1%AC%E7%BA%BF%E4%BD%93/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E8%A1%AC%E7%BA%BF%E4%BD%93/</guid>
       <description></description>
     </item>
     <item>
       <title>设计</title>
-      <link>https://freepd.cn/tags/%E8%AE%BE%E8%AE%A1/</link>
+      <link>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/%E8%AE%BE%E8%AE%A1/</guid>
+      <guid>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>阅读</title>
+      <link>http://localhost:1313/tags/%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E9%98%85%E8%AF%BB/</guid>
       <description></description>
     </item>
     <item>
       <title>黑体</title>
-      <link>https://freepd.cn/tags/%E9%BB%91%E4%BD%93/</link>
+      <link>http://localhost:1313/tags/%E9%BB%91%E4%BD%93/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://freepd.cn/tags/%E9%BB%91%E4%BD%93/</guid>
+      <guid>http://localhost:1313/tags/%E9%BB%91%E4%BD%93/</guid>
       <description></description>
     </item>
   </channel>

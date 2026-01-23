@@ -7,8 +7,8 @@ tags: ["可商用", "手写", "文艺", "古风", "设计"]
 categories: ["人文楷体", "中文字体", "免费字体"]
 weight: 45
 font_license: "SIL Open Font License 1.1 (绝对免费)"
-author_url: "https://github.com/YRD-font/YRD-ZhuShi"
-download_url: "https://pan.lanzouo.com/s/yrd-zhushi" # 示例链接
+author_url: "/fonts/yrd-zhushi" # 作者主页确实，用本站的URL
+download_url: "https://pan.baidu.com/s/1Ffz4t7VypWiOiTWsWZTTmw?pwd=248s"
 preview_image: "/images/fonts/yrd-zhushi-preview.png"
 showToc: true
 tocOpen: true
@@ -63,8 +63,7 @@ tocOpen: true
 
 ## 下载地址
 
-- [杨任东竹石体 GitHub 项目主页](https://github.com/YRD-font/YRD-ZhuShi)
-- [FreePD 备用下载](https://pan.lanzouo.com/s/yrd-zhushi)
+- [百度网盘](https://pan.baidu.com/s/1Ffz4t7VypWiOiTWsWZTTmw?pwd=248s)
 
 ## 你可能还会喜欢
 

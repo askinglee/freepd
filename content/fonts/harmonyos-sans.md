@@ -8,7 +8,7 @@ categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 26
 font_license: "HarmonyOS Sans 字体授权协议 (免费商用)"
 author_url: "https://developer.huawei.com/consumer/cn/design/resource/"
-download_url: "https://pan.lanzouo.com/s/harmonyos-sans" # 示例链接
+download_url: "https://pan.baidu.com/s/1yPrOk1yboI8hhuTiV7VfPA?pwd=82g6"
 preview_image: "/images/fonts/harmonyos-sans-preview.png"
 showToc: true
 tocOpen: true
@@ -63,8 +63,8 @@ HarmonyOS Sans 拥有极高的屏显清晰度和稳重的视觉中心，无论�
 
 ## 下载地址
 
+- [百度网盘下载](https://pan.baidu.com/s/1yPrOk1yboI8hhuTiV7VfPA?pwd=82g6)
 - [华为开发者官网资源下载](https://developer.huawei.com/consumer/cn/design/resource/)
-- [FreePD 备用下载](https://pan.lanzouo.com/s/harmonyos-sans)
 
 ## 你可能还会喜欢
 

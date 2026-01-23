@@ -8,7 +8,7 @@ categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 25
 font_license: "OPPO Sans 授权协议 (免费商用)"
 author_url: "https://open.oppomobile.com/wiki/doc#id=52"
-download_url: "https://pan.lanzouo.com/s/oppo-sans" # 示例链接
+download_url: "https://pan.baidu.com/s/1HhxDDHfDB3BtIqJpxBST4Q?pwd=r5jq"
 preview_image: "/images/fonts/oppo-sans-preview.png"
 showToc: true
 tocOpen: true
@@ -63,8 +63,8 @@ OPPO Sans 优化了字体的骨架和重心，使其在移动端屏幕（如手�
 
 ## 下载地址
 
-- [OPPO 开放平台官方下载](https://open.oppomobile.com/new/developmentSupport/resouce)
-- [FreePD 备用下载](https://pan.lanzouo.com/s/oppo-sans)
+- [百度网盘下载](https://pan.baidu.com/s/1HhxDDHfDB3BtIqJpxBST4Q?pwd=r5jq)
+- [OPPO 开放平台官方下载](https://open.oppomobile.com/documentation/page/info?id=13223)
 
 ## 你可能还会喜欢
 
