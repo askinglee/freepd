@@ -12,6 +12,9 @@ canonifyURLs = false
 
 [params]
     env = 'production'
+    [services.googleAnalytics]
+        ID = 'G-LWML4535XW'
+
     title = 'FreePD'
     description = 'FreePD 提供高质量、可商用的免费字体下载，涵盖中文字体、英文字体与设计字体，适合设计师、开发者、自媒体与学生使用。'
     keywords = ['免费字体', '免费商用字体', '中文字体下载', '英文字体下载', 'free fonts']
