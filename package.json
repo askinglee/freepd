@@ -1,0 +1,6 @@
+{
+    "name": "freepd",
+    "scripts": {
+        "deploy": "hugo && npx wrangler deploy"
+    }
+}
