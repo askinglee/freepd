@@ -1,6 +1,11 @@
 {
     "name": "freepd",
     "scripts": {
-        "deploy": "hugo && npx wrangler deploy"
+        "build": "hugo",
+        "deploy": "hugo && wrangler deploy"
+    },
+    "devDependencies": {
+        "hugo-bin": "^0.138.0",
+        "wrangler": "^3.107.0"
     }
 }

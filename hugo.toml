@@ -33,6 +33,11 @@ canonifyURLs = false
     [params.assets]
         disableFingerprinting = true
 
+    [sitemap]
+        changefreq = "weekly"
+        priority = 0.5
+        filename = "sitemap.xml"
+
     [params.label]
         text = "FreePD"
 
