@@ -30,6 +30,9 @@ canonifyURLs = false
     showtoc = true
     tocopen = false
 
+    [params.assets]
+        disableFingerprinting = true
+
     [params.label]
         text = "FreePD"
 

@@ -28,3 +28,4 @@ aita
 *.sln
 *.sw?
 hugo
+/public/
