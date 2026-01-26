@@ -1,0 +1,93 @@
+<div class="homepage-quick-tools">
+    <div class="tool-grid">
+        <a href="/tools/pdf-preview/" class="q-tool-card">
+            <span class="q-icon">👁️</span>
+            <span class="q-label">PDF 预览</span>
+            <span class="q-desc">免下载在线阅读</span>
+        </a>
+        <a href="/tools/merge-pdf/" class="q-tool-card">
+            <span class="q-icon">🔗</span>
+            <span class="q-label">PDF 合并</span>
+            <span class="q-desc">多文件零星合并</span>
+        </a>
+        <a href="/tools/pdf-to-image/" class="q-tool-card">
+            <span class="q-icon">🖼️</span>
+            <span class="q-label">PDF 转图片</span>
+            <span class="q-desc">高清无损导出</span>
+        </a>
+        <a href="/tools/compress-pdf/" class="q-tool-card">
+            <span class="q-icon">📉</span>
+            <span class="q-label">PDF 压缩</span>
+            <span class="q-desc">智能瘦身优化</span>
+        </a>
+    </div>
+</div>
+
+<style>
+    .homepage-quick-tools {
+        margin: 20px 0 30px;
+    }
+
+    .tool-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+    }
+
+    .q-tool-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 12px;
+        text-decoration: none !important;
+        transition: all 0.2s ease;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .dark .q-tool-card {
+        background: #2e2e33;
+        border-color: #3e3e42;
+        box-shadow: none;
+    }
+
+    .q-tool-card:hover {
+        transform: translateY(-4px);
+        border-color: #3b82f6;
+        box-shadow: 0 8px 16px rgba(59, 130, 246, 0.1);
+    }
+
+    .q-icon {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .q-label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #1d1d1f;
+        margin-bottom: 4px;
+    }
+
+    .dark .q-label {
+        color: #e1e1e1;
+    }
+
+    .q-desc {
+        font-size: 12px;
+        color: #86868b;
+    }
+
+    .dark .q-desc {
+        color: #a1a1a6;
+    }
+
+    @media (max-width: 480px) {
+        .tool-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>

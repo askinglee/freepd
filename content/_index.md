@@ -11,17 +11,169 @@ keywords:
 showBreadcrumbs: false
 ---
 
-# 免费字体下载 · 可商用 · 无套路
+{{< rawhtml >}}
+<div class="homepage-hero">
+    <div class="hero-header">
+        <h1>免费字体下载 · 可商用 · 无套路</h1>
+        <p class="hero-subtitle">致力收集整理高质量商用资源，让创作更简单</p>
+    </div>
+    
+    <div class="category-tabs">
+        <div class="cat-section">
+            <h3 class="cat-title">🗄️ 字体资源</h3>
+            <div class="cat-actions">
+                <a href="/fonts/" class="cat-btn primary">浏览全部字体</a>
+                <a href="/tags/可商用/" class="cat-btn secondary">可商用专题</a>
+            </div>
+            <p class="cat-tip">无需注册，即下即写，标注明确</p>
+        </div>
+        
+        <div class="cat-divider"></div>
+        
+        <div class="cat-section">
+            <h3 class="cat-title">🛠️ PDF 工具箱</h3>
+            <div class="cat-actions">
+                <a href="/tools/pdf-preview/" class="cat-btn tool-link">预览</a>
+                <a href="/tools/merge-pdf/" class="cat-btn tool-link">合并</a>
+                <a href="/tools/pdf-to-image/" class="cat-btn tool-link">转图</a>
+                <a href="/tools/compress-pdf/" class="cat-btn tool-link">压缩</a>
+            </div>
+            <p class="cat-tip">纯本地处理，保护隐私，秒速响应</p>
+        </div>
+    </div>
+</div>
 
-**FreePD** 致力于收集和整理 **高质量、可商用的免费字体资源**，  
-让设计师、开发者、自媒体与学生 **放心使用，不踩授权坑**。
+<style>
+.homepage-hero {
+    margin: 1.5rem 0 3rem;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #f9fafb);
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+.dark .homepage-hero {
+    background: linear-gradient(145deg, #1f2937, #111827);
+    border-color: #374151;
+    box-shadow: none;
+}
 
-👉 所有字体均标注授权信息，**无需注册即可下载**。
+.hero-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.hero-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    background: linear-gradient(90deg, #1f2937, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dark .hero-header h1 {
+    background: linear-gradient(90deg, #f3f4f6, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #6b7280;
+}
+.dark .hero-subtitle { color: #9ca3af; }
 
-[👉 浏览全部免费字体](/fonts/)  
-[👉 查看可商用字体](/tags/可商用/)
+.category-tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
 
----
+.cat-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cat-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: #374151;
+}
+.dark .cat-title { color: #d1d5db; }
+
+.cat-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.cat-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none !important;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-btn.primary {
+    background: #3b82f6;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+.cat-btn.primary:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4); }
+
+.cat-btn.secondary {
+    background: #fff;
+    color: #4b5563 !important;
+    border: 2px solid #e5e7eb;
+}
+.dark .cat-btn.secondary { background: #374151; border-color: #4b5563; color: #f3f4f6 !important; }
+.cat-btn.secondary:hover { border-color: #3b82f6; color: #3b82f6 !important; }
+
+.cat-btn.tool-link {
+    background: #f3f4f6;
+    color: #4b5563 !important;
+    border: 1px solid transparent;
+}
+.dark .cat-btn.tool-link { background: #374151; color: #d1d5db !important; }
+.cat-btn.tool-link:hover { border-color: #10b981; color: #10b981 !important; transform: scale(1.05); }
+
+.cat-tip {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.cat-divider {
+    width: 1px;
+    align-self: stretch;
+    background: #e5e7eb;
+}
+.dark .cat-divider { background: #374151; }
+
+@media (max-width: 768px) {
+    .category-tabs {
+        flex-direction: column;
+    }
+    .cat-divider {
+        width: 100%;
+        height: 1px;
+    }
+    .homepage-hero {
+        padding: 1.5rem;
+    }
+    .hero-header h1 { font-size: 1.5rem; }
+}
+</style>
+{{< /rawhtml >}}
 
 ## 为什么选择 FreePD？
 
@@ -69,15 +221,17 @@ showBreadcrumbs: false
 
 ---
 
-## 即将上线：免费 PDF 工具
+## 免费在线 PDF 工具
 
-FreePD 正在扩展更多 **免费、好用的在线工具**：
+除了精选字体，FreePD 现在提供一系列 **纯本地处理、安全好用** 的 PDF 工具：
 
-- 免费 PDF 合并
-- 免费 PDF 压缩
-- 免费 PDF 转图片
+- [**PDF 预览**](/tools/pdf-preview/) —— 极致轻快的在线阅读体验
+- [**PDF 合并**](/tools/merge-pdf/) —— 快速将多个文件组合
+- [**PDF 转图片**](/tools/pdf-to-image/) —— 高质量转换，支持大图预览
+- [**PDF 压缩**](/tools/compress-pdf/) —— 智能瘦身，节省存储空间
+- [**图片转 PDF**](/tools/image-to-pdf/) —— 多图快速合成为文档
 
-👉 无需注册，打开即用，敬请期待。
+👉 隐私至上：所有处理均在您的浏览器本地完成，文件永不上传。
 
 ---
 

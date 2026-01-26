@@ -1,29 +1,29 @@
 ---
-title: "PDF 合并 - 免费在线工具"
-date: 2026-01-22
-description: "FreePD 提供的 PDF 合并工具，完全免费，不限次数。文件在浏览器本地处理，不上传服务器，安全保护隐私。"
-slug: merge-pdf
-tags: ["PDF工具", "免费工具"]
+title: "图片转 PDF - 免费在线工具"
+date: 2026-01-26
+description: "将 JPG、PNG 等图片快速转换为 PDF 文档。纯本地处理，保护隐私。"
+slug: image-to-pdf
+tags: ["PDF工具", "图片转PDF"]
 categories: ["在线工具"]
 ---
 
-## PDF 合并工具
+## 图片转 PDF
 
 {{< rawhtml >}}
-<div id="pdf-merge-tool" class="pdf-tool-container">
+<div id="image-to-pdf-tool" class="pdf-tool-container">
     <div class="drop-zone" id="drop-zone">
-        <p>拖拽 PDF 文件到这里，或 <span class="browse-btn">点击浏览</span></p>
-        <input type="file" id="file-input" multiple accept=".pdf" style="display: none;">
+        <p>拖拽图片到这里 (JPG/PNG)，或 <span class="browse-btn">点击浏览</span></p>
+        <input type="file" id="file-input" multiple accept="image/*" style="display: none;">
     </div>
 
     <div id="file-list" class="file-list">
-        <!-- 选中的文件将显示在这里 -->
+        <!-- 选中的图片将显示在这里 -->
     </div>
 
     <div class="actions main-actions">
-        <button id="merge-btn" class="primary-btn btn-large" disabled>
+        <button id="convert-btn" class="primary-btn btn-large" disabled>
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20m-8-8l8 8 8-8"/></svg>
-            立即合并 PDF 文件
+            立即生成 PDF 文档
         </button>
         <button id="clear-btn" class="secondary-btn btn-large" style="display: none;">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18m-2 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
@@ -69,39 +69,41 @@ categories: ["在线工具"]
     text-decoration: underline;
 }
 .file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
     margin: 2rem 0;
 }
 .file-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    margin-bottom: 0.75rem;
-    background: #f9fafb;
+    position: relative;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    background: #f3f4f6;
     transition: transform 0.2s;
 }
-.file-item:hover { transform: translateX(5px); }
-.dark .file-item {
-    background: #374151;
-    border-color: #4b5563;
+.file-item:hover { transform: scale(1.05); }
+.file-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.file-info {
-    display: flex;
-    align-items: center;
-}
-.file-name {
-    font-size: 0.95rem;
-    color: #1f2937;
-    font-weight: 500;
-}
-.dark .file-name { color: #f3f4f6; }
 .remove-btn {
-    color: #ef4444;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(239, 68, 68, 0.9);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
     cursor: pointer;
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .main-actions {
     display: flex;
@@ -122,17 +124,17 @@ categories: ["在线工具"]
     transition: all 0.2s;
 }
 .primary-btn {
-    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.39);
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.39);
 }
 .primary-btn:hover:not(:disabled) {
     transform: scale(1.02);
-    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
 }
 .primary-btn:disabled {
     background: #d1d5db;
@@ -162,25 +164,24 @@ categories: ["在线工具"]
 .error { color: #dc2626; font-weight: 500; }
 </style>
 
-<script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
+    const { jsPDF } = window.jspdf;
     const dropZone = document.getElementById('drop-zone');
     const fileInput = document.getElementById('file-input');
     const fileList = document.getElementById('file-list');
-    const mergeBtn = document.getElementById('merge-btn');
+    const convertBtn = document.getElementById('convert-btn');
     const clearBtn = document.getElementById('clear-btn');
     const statusMsg = document.getElementById('status-msg');
 
-    let filesArray = [];
+    let imagesArray = [];
 
-    // 点击上传
     dropZone.addEventListener('click', () => fileInput.click());
 
     fileInput.addEventListener('change', (e) => {
         handleFiles(e.target.files);
     });
 
-    // 拖拽上传
     dropZone.addEventListener('dragover', (e) => {
         e.preventDefault();
         dropZone.classList.add('drag-over');
@@ -198,87 +199,101 @@ categories: ["在线工具"]
 
     function handleFiles(files) {
         for (let file of files) {
-            if (file.type === 'application/pdf') {
-                filesArray.push(file);
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    imagesArray.push({
+                        name: file.name,
+                        data: e.target.result,
+                        type: file.type
+                    });
+                    updateFileList();
+                };
+                reader.readAsDataURL(file);
             }
         }
-        updateFileList();
     }
 
     function updateFileList() {
         if (!fileList) return;
         fileList.innerHTML = '';
-        filesArray.forEach((file, index) => {
+        imagesArray.forEach((img, index) => {
             const item = document.createElement('div');
             item.className = 'file-item';
             item.innerHTML = `
-                <div class="file-info">
-                    <span class="file-name">${index + 1}. ${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)</span>
-                </div>
-                <span class="remove-btn" onclick="removeFile(${index})">删除</span>
+                <img src="${img.data}">
+                <span class="remove-btn" onclick="removeImg(${index})">×</span>
             `;
             fileList.appendChild(item);
         });
 
-        mergeBtn.disabled = filesArray.length < 2;
-        clearBtn.style.display = filesArray.length > 0 ? 'inline-block' : 'none';
+        convertBtn.disabled = imagesArray.length === 0;
+        clearBtn.style.display = imagesArray.length > 0 ? 'inline-block' : 'none';
     }
 
-    window.removeFile = (index) => {
-        filesArray.splice(index, 1);
+    window.removeImg = (index) => {
+        imagesArray.splice(index, 1);
         updateFileList();
     };
 
     clearBtn.addEventListener('click', () => {
-        filesArray = [];
+        imagesArray = [];
         updateFileList();
         statusMsg.innerHTML = '';
     });
 
-    mergeBtn.addEventListener('click', async () => {
+    convertBtn.addEventListener('click', async () => {
         try {
-            mergeBtn.disabled = true;
-            mergeBtn.innerText = '正在处理...';
+            convertBtn.disabled = true;
+            convertBtn.innerText = '正在生成...';
             statusMsg.className = 'status-msg';
-            statusMsg.innerText = '正在合并 PDF 文件，请稍候...';
+            statusMsg.innerText = '正在将图片合成为 PDF，请稍候...';
 
-            const { PDFDocument } = PDFLib;
-            const mergedPdf = await PDFDocument.create();
-
-            for (const file of filesArray) {
-                const arrayBuffer = await file.arrayBuffer();
-                const pdf = await PDFDocument.load(arrayBuffer);
-                const copiedPages = await mergedPdf.copyPages(pdf, pdf.getPageIndices());
-                copiedPages.forEach((page) => mergedPdf.addPage(page));
+            const doc = new jsPDF();
+            
+            for (let i = 0; i < imagesArray.length; i++) {
+                if (i > 0) doc.addPage();
+                
+                const img = imagesArray[i];
+                const pageWidth = doc.internal.pageSize.getWidth();
+                const pageHeight = doc.internal.pageSize.getHeight();
+                
+                // 获取图片原始尺寸以保持比例
+                const imgProps = doc.getImageProperties(img.data);
+                const ratio = imgProps.width / imgProps.height;
+                
+                let width = pageWidth - 20;
+                let height = width / ratio;
+                
+                if (height > pageHeight - 20) {
+                    height = pageHeight - 20;
+                    width = height * ratio;
+                }
+                
+                const x = (pageWidth - width) / 2;
+                const y = (pageHeight - height) / 2;
+                
+                doc.addImage(img.data, img.type.split('/')[1].toUpperCase(), x, y, width, height);
             }
 
-            const mergedPdfBytes = await mergedPdf.save();
-            const blob = new Blob([mergedPdfBytes], { type: 'application/pdf' });
-            const url = URL.createObjectURL(blob);
-            
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = `merged_${new Date().getTime()}.pdf`;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            doc.save(`images_${new Date().getTime()}.pdf`);
 
             statusMsg.className = 'status-msg success';
-            statusMsg.innerText = '✅ 合并成功！文件已开始下载。';
+            statusMsg.innerText = '✅ 转换成功！PDF 已开始下载。';
         } catch (error) {
             console.error(error);
             statusMsg.className = 'status-msg error';
-            statusMsg.innerText = '❌ 合并失败：' + error.message;
+            statusMsg.innerText = '❌ 转换失败：' + error.message;
         } finally {
-            mergeBtn.disabled = false;
-            mergeBtn.innerText = '立即合并 PDF';
+            convertBtn.disabled = false;
+            convertBtn.innerText = '立即生成 PDF';
         }
     });
 </script>
 {{< /rawhtml >}}
 
 {{< rawhtml >}}
-<div class="related-tools" data-current="merge">
+<div class="related-tools" data-current="to-pdf">
     <h3>🛠️ 更多 PDF 工具</h3>
     <div class="tool-links">
         <a href="/tools/pdf-preview/" class="tool-link" id="link-preview">

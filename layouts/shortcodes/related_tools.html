@@ -1,0 +1,101 @@
+<div class="related-tools">
+    <h3>🛠️ 更多 PDF 工具</h3>
+    <div class="tool-links">
+        <a href="/tools/pdf-preview/" class="tool-link" id="link-preview">
+            <span class="icon">👁️</span>
+            <span class="label">PDF 预览</span>
+        </a>
+        <a href="/tools/merge-pdf/" class="tool-link" id="link-merge">
+            <span class="icon">🔗</span>
+            <span class="label">PDF 合并</span>
+        </a>
+        <a href="/tools/pdf-to-image/" class="tool-link" id="link-to-image">
+            <span class="icon">🖼️</span>
+            <span class="label">PDF 转图片</span>
+        </a>
+        <a href="/tools/image-to-pdf/" class="tool-link" id="link-to-pdf">
+            <span class="icon">📄</span>
+            <span class="label">图片转 PDF</span>
+        </a>
+        <a href="/tools/compress-pdf/" class="tool-link" id="link-compress">
+            <span class="icon">📉</span>
+            <span class="label">PDF 压缩</span>
+        </a>
+    </div>
+</div>
+
+<style>
+    .related-tools {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 2px solid #f3f4f6;
+    }
+
+    .dark .related-tools {
+        border-color: #374151;
+    }
+
+    .related-tools h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        color: #374151;
+    }
+
+    .dark .related-tools h3 {
+        color: #d1d5db;
+    }
+
+    .tool-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1rem;
+    }
+
+    .tool-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        text-decoration: none !important;
+        transition: all 0.2s;
+        color: #4b5563 !important;
+    }
+
+    .dark .tool-link {
+        background: #374151;
+        border-color: #4b5563;
+        color: #f3f4f6 !important;
+    }
+
+    .tool-link:hover {
+        transform: translateY(-3px);
+        border-color: #3b82f6;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        background: #fff;
+    }
+
+    .dark .tool-link:hover {
+        background: #1f2937;
+    }
+
+    .tool-link .icon {
+        font-size: 1.25rem;
+    }
+
+    .tool-link .label {
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+
+    /* 隐藏当前页面的链接 */
+    [data-current="preview"] #link-preview,
+    [data-current="merge"] #link-merge,
+    [data-current="to-image"] #link-to-image,
+    [data-current="to-pdf"] #link-to-pdf,
+    [data-current="compress"] #link-compress {
+        display: none;
+    }
+</style>
