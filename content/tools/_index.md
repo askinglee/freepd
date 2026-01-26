@@ -12,11 +12,12 @@ layout: "list"
 
 | 工具名称 | 状态 | 描述 |
 | :--- | :--- | :--- |
-| **[PDF 预览](pdf-preview/)** | ✅ 已上线 | 在线直接预览 PDF 文档内容。 |
-| **[PDF 合并](merge-pdf/)** | ✅ 已上线 | 将多个 PDF 文件合并成一个。 |
-| **[PDF 转图片](pdf-to-image/)** | ✅ 已上线 | 将 PDF 页面转换为高质量图片。 |
-| **[图片转 PDF](image-to-pdf/)** | ✅ 已上线 | 将多张图片合成为一个 PDF。 |
-| **[PDF 压缩](compress-pdf/)** | ✅ 已上线 | 减小 PDF 文件大小。 |
+| **[PDF 预览](pdf-preview/)** | ✅ 已上线 | 浏览器极速预览 PDF，无需安装阅读器。 |
+| **[PDF 合并](merge-pdf/)** | ✅ 已上线 | 多个 PDF 文件快速合并。 |
+| **[PDF 转 Word](pdf-to-word/)** | 🛠️ 测试中 | 生成可编辑的 Word 文档 (暂不支持排版)。 |
+| **[PDF 转图片](pdf-to-image/)** | ✅ 已上线 | 将每页 PDF 导出为高清图片。 |
+| **[图片转 PDF](image-to-pdf/)** | ✅ 已上线 | 将手机图片/截图一键合成为 PDF 文档。 |
+| **[PDF 压缩](compress-pdf/)** | ✅ 已上线 | 优化文件结构，显著减小 PDF 体积。 |
 
 ---
 

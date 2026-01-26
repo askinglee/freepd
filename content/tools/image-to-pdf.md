@@ -1,7 +1,7 @@
 ---
 title: "图片转 PDF - 免费在线工具"
 date: 2026-01-26
-description: "将 JPG、PNG 等图片快速转换为 PDF 文档。纯本地处理，保护隐私。"
+description: "将一组图片（JPG/PNG）一键合成为标准的 PDF 文档。本地生成，保护照片隐私，简单易用。"
 slug: image-to-pdf
 tags: ["PDF工具", "图片转PDF"]
 categories: ["在线工具"]
@@ -298,23 +298,45 @@ categories: ["在线工具"]
     <div class="tool-links">
         <a href="/tools/pdf-preview/" class="tool-link" id="link-preview">
             <span class="icon">👁️</span>
-            <span class="label">PDF 预览</span>
+            <div class="info">
+                <span class="label">PDF 预览</span>
+                <span class="desc">直接在浏览器查看</span>
+            </div>
         </a>
         <a href="/tools/merge-pdf/" class="tool-link" id="link-merge">
             <span class="icon">🔗</span>
-            <span class="label">PDF 合并</span>
+            <div class="info">
+                <span class="label">PDF 合并</span>
+                <span class="desc">多个文件合并为一个</span>
+            </div>
+        </a>
+        <a href="/tools/pdf-to-word/" class="tool-link" id="link-to-word">
+            <span class="icon">📝</span>
+            <div class="info">
+                <span class="label">PDF 转 Word <span style="font-size: 10px; color: #ef4444; border: 1px solid #ef4444; padding: 0 2px; border-radius: 4px;">测试</span></span>
+                <span class="desc">生成可编辑文字文档</span>
+            </div>
         </a>
         <a href="/tools/pdf-to-image/" class="tool-link" id="link-to-image">
             <span class="icon">🖼️</span>
-            <span class="label">PDF 转图片</span>
+            <div class="info">
+                <span class="label">PDF 转图片</span>
+                <span class="desc">导出高清无损图片集</span>
+            </div>
         </a>
         <a href="/tools/image-to-pdf/" class="tool-link" id="link-to-pdf">
             <span class="icon">📄</span>
-            <span class="label">图片转 PDF</span>
+            <div class="info">
+                <span class="label">图片转 PDF</span>
+                <span class="desc">多图一键合成文档</span>
+            </div>
         </a>
         <a href="/tools/compress-pdf/" class="tool-link" id="link-compress">
             <span class="icon">📉</span>
-            <span class="label">PDF 压缩</span>
+            <div class="info">
+                <span class="label">PDF 压缩</span>
+                <span class="desc">智能优化并减小体积</span>
+            </div>
         </a>
     </div>
 </div>
@@ -329,9 +351,13 @@ categories: ["在线工具"]
     .dark .tool-link { background: #374151; border-color: #4b5563; color: #f3f4f6 !important; }
     .tool-link:hover { transform: translateY(-3px); border-color: #3b82f6; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); background: #fff; }
     .dark .tool-link:hover { background: #1f2937; }
-    .tool-link .icon { font-size: 1.25rem; }
-    .tool-link .label { font-weight: 600; font-size: 0.95rem; }
-    [data-current="preview"] #link-preview, [data-current="merge"] #link-merge, [data-current="to-image"] #link-to-image, [data-current="to-pdf"] #link-to-pdf, [data-current="compress"] #link-compress { display: none; }
+    .tool-link .icon { font-size: 1.5rem; }
+    .tool-link .info { display: flex; flex-direction: column; gap: 0.25rem; }
+    .tool-link .label { font-weight: 700; font-size: 1rem; color: #111827; }
+    .dark .tool-link .label { color: #f3f4f6; }
+    .tool-link .desc { font-size: 0.8rem; color: #6b7280; font-weight: 400; }
+    .dark .tool-link .desc { color: #9ca3af; }
+    [data-current="preview"] #link-preview, [data-current="merge"] #link-merge, [data-current="to-image"] #link-to-image, [data-current="to-pdf"] #link-to-pdf, [data-current="compress"] #link-compress, [data-current="to-word"] #link-to-word { display: none; }
 </style>
 {{< /rawhtml >}}
 
