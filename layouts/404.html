@@ -1,0 +1,47 @@
+{{- define "main" }}
+<div class="not-found">404</div>
+<div class="not-found-content">
+    <p>抱歉，您访问的页面不存在。</p>
+    <p>您可以尝试搜索需要的资源，或者返回首页。</p>
+
+    <div class="search-container" style="margin: 20px auto; max-width: 400px;">
+        {{- if site.Params.fuseOpts }}
+        <div id="searchbox">
+            <input id="searchInput" autofocus placeholder="搜索字体..." aria-label="search" type="search"
+                autocomplete="off">
+            <ul id="searchResults" aria-label="search results"></ul>
+        </div>
+        {{- end }}
+    </div>
+
+    <a href="{{ site.BaseURL }}" class="button">返回首页</a>
+</div>
+
+<style>
+    .not-found-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .not-found-content p {
+        font-size: 18px;
+        color: var(--secondary);
+        margin-bottom: 10px;
+    }
+
+    .not-found-content .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: var(--primary);
+        color: var(--theme);
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .not-found-content .button:hover {
+        opacity: 0.9;
+    }
+</style>
+{{- end }}{{/* end main */ -}}

@@ -4,7 +4,7 @@ title = '免费字体下载 · 可商用 · 无套路 | FreePD'
 theme = 'PaperMod'
 
 # 增强本地调试支持
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 
 [outputs]
