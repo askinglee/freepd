@@ -1,6 +1,16 @@
 ---
-title: "PDF 工具箱"
-description: "纯本地处理、保护隐私的 PDF 在线处理工具。所有操作都在您的浏览器中完成，文件不上传服务器。"
+title: "PDF 工具箱 - 免费在线PDF处理工具"
+description: "FreePD提供免费在线PDF工具箱，包括PDF合并、压缩、转Word、转图片等功能。所有处理都在本地浏览器完成，100%保护隐私安全。"
+keywords:
+  - PDF工具
+  - 在线PDF工具
+  - 免费PDF工具
+  - PDF合并
+  - PDF压缩
+  - PDF转Word
+  - PDF转图片
+  - 图片转PDF
+  - PDF在线处理
 layout: "list"
 ---
 

@@ -1,9 +1,18 @@
 ---
 title: "PDF 在线预览 - 免费在线工具"
 date: 2026-01-26
-description: "无需下载，直接在浏览器中秒速预览 PDF 页面。100% 本地处理，确保文档隐私不外泄。"
+description: "免费在线PDF预览工具，无需下载软件，直接在浏览器中快速查看PDF文档。100%本地处理，保护文档隐私。"
 slug: pdf-preview
 tags: ["PDF工具", "PDF预览"]
+keywords:
+  - PDF预览
+  - PDF在线预览
+  - PDF查看器
+  - 在线PDF阅读
+  - PDF在线打开
+  - 免费PDF预览
+  - 浏览器PDF查看
+  - PDF阅读器
 categories: ["在线工具"]
 ---
 

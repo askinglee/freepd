@@ -1,9 +1,18 @@
 ---
 title: "PDF 转图片 - 免费在线工具"
 date: 2026-01-26
-description: "将 PDF 每一页导出为高清 JPG/PNG 图片包。本地转换，支持批量打包下载，隐私绝对安全。"
+description: "免费在线PDF转图片工具，将PDF每页导出为高清JPG/PNG图片。100%本地处理，支持批量下载，保护隐私安全。"
 slug: pdf-to-image
 tags: ["PDF工具", "PDF转图片"]
+keywords:
+  - PDF转图片
+  - PDF转JPG
+  - PDF转PNG
+  - PDF转图片在线
+  - PDF转图片免费
+  - PDF导出图片
+  - PDF转高清图片
+  - 在线PDF转图工具
 categories: ["在线工具"]
 ---
 

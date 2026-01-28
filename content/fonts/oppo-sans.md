@@ -4,6 +4,17 @@ date: 2026-01-22
 description: "OPPO Sans 是 OPPO 品牌定制字体，由汉仪字库设计。它具备极简、现代的视觉风格，字重丰富，完美适配屏幕显示，且对全球用户永久免费商用。"
 slug: oppo-sans
 tags: ["可商用", "黑体", "OPPO", "设计", "屏显"]
+keywords:
+  - OPPO Sans
+  - OPPO Sans下载
+  - OPPO Sans免费下载
+  - OPPO字体
+  - OPPO Sans商用
+  - OPPO Sans可以商用吗
+  - 汉仪字体免费
+  - 手机系统字体
+  - ColorOS字体
+  - 免费商用黑体
 categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 25
 font_license: "OPPO Sans 授权协议 (免费商用)"

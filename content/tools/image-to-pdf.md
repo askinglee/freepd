@@ -1,9 +1,18 @@
 ---
 title: "图片转 PDF - 免费在线工具"
 date: 2026-01-26
-description: "将一组图片（JPG/PNG）一键合成为标准的 PDF 文档。本地生成，保护照片隐私，简单易用。"
+description: "免费在线图片转PDF工具，将多张JPG/PNG图片一键合成为标准PDF文档。本地处理，保护隐私，简单易用。"
 slug: image-to-pdf
 tags: ["PDF工具", "图片转PDF"]
+keywords:
+  - 图片转PDF
+  - JPG转PDF
+  - PNG转PDF
+  - 图片合成PDF
+  - 多图转PDF
+  - 图片转PDF在线
+  - 图片转PDF免费
+  - 照片转PDF
 categories: ["在线工具"]
 ---
 

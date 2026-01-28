@@ -4,6 +4,17 @@ date: 2026-01-22
 description: "MiSans 是小米品牌定制字体，随 MIUI 13 发布。它具备高度的屏显清晰度和丰富的 OpenType 特性，在不同大小下都有极致表现，且对全社会永久免费商用。"
 slug: misans
 tags: ["可商用", "黑体", "Xiaomi", "设计", "屏显", "UI"]
+keywords:
+  - MiSans
+  - MiSans下载
+  - MiSans免费下载
+  - 小米字体
+  - 小米MiSans
+  - MiSans商用
+  - MiSans可以商用吗
+  - MIUI字体
+  - 澎湃OS字体
+  - 免费商用黑体
 categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 28
 font_license: "MiSans 字体授权协议 (免费商用)"

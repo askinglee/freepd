@@ -4,11 +4,22 @@ date: 2026-01-22
 description: "思源宋体是 Adobe 与 Google 合作开发的开源宋体字轴。作为思源黑体的同伴，它专为长文阅读设计，在印刷和屏幕显示上都有极佳表现。完美支持简繁日韩，永久免费商用。"
 slug: source-han-serif
 tags: ["可商用", "衬线体", "Google", "Adobe", "设计", "正文"]
+keywords:
+  - 思源宋体
+  - 思源宋体下载
+  - 思源宋体免费下载
+  - Source Han Serif
+  - Noto Serif CJK
+  - 思源宋体商用
+  - 思源宋体可以商用吗
+  - 免费宋体下载
+  - 中文宋体下载
+  - 谷歌免费宋体
 categories: ["经典宋体", "中文字体", "免费字体"]
 weight: 15
 font_license: "SIL Open Font License 1.1 (绝对免费)"
 author_url: "https://github.com/adobe-fonts/source-han-serif"
-download_url: "https://pan.baidu.com/s/1OJMDe0vZfsHNYc6HYT5YvQ?pwd=dj3w" # 示例链接
+download_url: "https://pan.baidu.com/s/1OJMDe0vZfsHNYc6HYT5YvQ?pwd=dj3w"
 preview_image: "/images/fonts/source-han-serif-preview.png"
 showToc: true
 tocOpen: true

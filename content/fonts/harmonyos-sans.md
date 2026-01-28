@@ -4,6 +4,17 @@ date: 2026-01-22
 description: "HarmonyOS Sans 是华为品牌定制字体。它是一款专为多设备全场景设计的字体，支持动态字重调节，在手机、平板、手表等各种屏幕上都能提供极佳的阅读体验，全球免费商用。"
 slug: harmonyos-sans
 tags: ["可商用", "黑体", "Huawei", "HarmonyOS", "设计", "多端适配"]
+keywords:
+  - HarmonyOS Sans
+  - HarmonyOS Sans下载
+  - 华为字体
+  - 华为字体下载
+  - 鸿蒙字体
+  - HarmonyOS Sans商用
+  - HarmonyOS Sans可以商用吗
+  - 华为免费字体
+  - 鸿蒙系统字体
+  - 免费商用黑体
 categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 26
 font_license: "HarmonyOS Sans 字体授权协议 (免费商用)"

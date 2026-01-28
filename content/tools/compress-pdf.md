@@ -1,9 +1,18 @@
 ---
 title: "PDF 压缩 - 免费在线工具"
 date: 2026-01-26
-description: "智能优化 PDF 结构以减小体积。本地化处理，在保证清晰度的同时显著压缩文件大小。"
+description: "免费在线PDF压缩工具，智能优化PDF结构减小文件体积。100%本地处理，无需上传，保护隐私安全。"
 slug: compress-pdf
 tags: ["PDF工具", "PDF压缩"]
+keywords:
+  - PDF压缩
+  - PDF压缩在线
+  - PDF压缩免费
+  - 压缩PDF文件
+  - PDF瘦身
+  - 减小PDF体积
+  - 在线PDF压缩工具
+  - 免费PDF压缩器
 categories: ["在线工具"]
 ---
 

@@ -1,0 +1,238 @@
+{{- /* 自定义 SEO Schema 结构化数据 */ -}}
+
+{{- /* 字体页面 - SoftwareApplication Schema */ -}}
+{{- if and .IsPage (eq .Section "fonts") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ .Title | plainify }}",
+  "description": "{{ .Description | plainify }}",
+  "url": "{{ .Permalink }}",
+  "applicationCategory": "Font",
+  "operatingSystem": "Windows, macOS, Linux, iOS, Android",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY",
+    "availability": "https://schema.org/InStock"
+  },
+  {{- with .Params.font_license }}
+  "license": "{{ . }}",
+  {{- end }}
+  {{- with .Params.author_url }}
+  "author": {
+    "@type": "Organization",
+    "url": "{{ . }}"
+  },
+  {{- end }}
+  "provider": {
+    "@type": "Organization",
+    "name": "FreePD",
+    "url": "https://freepd.cn"
+  }
+}
+</script>
+
+{{- /* 字体页面 FAQ Schema */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "{{ .Title | plainify }}可以商用吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ with .Params.font_license }}该字体授权为 {{ . }}，{{ end }}详情请查看本页面的授权说明部分。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "{{ .Title | plainify }}如何下载？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "您可以在本页面找到官方下载链接或百度网盘下载地址，点击即可免费下载。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "{{ .Title | plainify }}支持哪些系统？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "该字体支持 Windows、macOS、Linux 等主流操作系统，也可用于 iOS 和 Android 移动设备。"
+      }
+    }
+  ]
+}
+</script>
+{{- end }}
+
+{{- /* 工具页面 - WebApplication Schema */ -}}
+{{- if and .IsPage (eq .Section "tools") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "{{ .Title | plainify }}",
+  "description": "{{ .Description | plainify }}",
+  "url": "{{ .Permalink }}",
+  "applicationCategory": "UtilitiesApplication",
+  "browserRequirements": "Requires JavaScript, WebAssembly support",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY",
+    "availability": "https://schema.org/OnlineOnly"
+  },
+  "featureList": [
+    "纯本地处理",
+    "无需上传文件",
+    "保护隐私安全",
+    "完全免费使用"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "FreePD",
+    "url": "https://freepd.cn"
+  }
+}
+</script>
+
+{{- /* 工具页面 FAQ Schema */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "这个工具是免费的吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的，FreePD 的所有 PDF 工具都是完全免费的，没有次数限制，没有广告。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "我的文件会被上传到服务器吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不会。所有处理都在您的浏览器本地完成，文件不会离开您的电脑，完全保护您的隐私。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "需要安装软件吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不需要。只需要一个现代浏览器（Chrome、Firefox、Edge、Safari 等），打开网页即可使用。"
+      }
+    }
+  ]
+}
+</script>
+{{- end }}
+
+{{- /* 首页 - WebSite Schema (增强搜索框) */ -}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "FreePD",
+  "alternateName": ["FreePD 免费字体", "免费字体下载"],
+  "url": "https://freepd.cn",
+  "description": "{{ site.Params.description }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://freepd.cn/search/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+{{- /* 首页 - ItemList Schema (字体列表) */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "热门免费商用字体",
+  "description": "FreePD 精选的免费可商用字体推荐",
+  "numberOfItems": 11,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "思源黑体",
+      "url": "https://freepd.cn/fonts/source-han-sans/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "阿里巴巴普惠体",
+      "url": "https://freepd.cn/fonts/alibaba-puhuiti/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPPO Sans",
+      "url": "https://freepd.cn/fonts/oppo-sans/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "MiSans",
+      "url": "https://freepd.cn/fonts/misans/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "HarmonyOS Sans",
+      "url": "https://freepd.cn/fonts/harmonyos-sans/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "思源宋体",
+      "url": "https://freepd.cn/fonts/source-han-serif/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "霞鹜文楷",
+      "url": "https://freepd.cn/fonts/lxgw-wenkai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "杨任东竹石体",
+      "url": "https://freepd.cn/fonts/yrd-zhushi/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "江西拙楷体",
+      "url": "https://freepd.cn/fonts/jiangxi-zhuokai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "站酷高端黑",
+      "url": "https://freepd.cn/fonts/zcool-gdh/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "庞门正道标题体",
+      "url": "https://freepd.cn/fonts/pangmen-zhengdao-biaoti/"
+    }
+  ]
+}
+</script>
+{{- end }}

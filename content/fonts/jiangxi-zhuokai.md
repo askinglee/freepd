@@ -4,10 +4,21 @@ date: 2026-01-22
 description: "江西拙楷体是由设计师黄煜臣创作的一款手写字体。它保留了毛笔书写的自然质感，形拙而神不拙，非常适合用于温暖、质朴、文艺感十足的设计场景，且永久免费商用。"
 slug: jiangxi-zhuokai
 tags: ["可商用", "楷体", "手写", "文艺", "设计"]
+keywords:
+  - 江西拙楷体
+  - 江西拙楷体下载
+  - 江西拙楷体免费下载
+  - 拙楷体
+  - 江西拙楷体商用
+  - 江西拙楷体可以商用吗
+  - 免费手写字体
+  - 毛笔字体下载
+  - 文艺字体下载
+  - 手写楷体
 categories: ["人文楷体", "中文字体", "免费字体"]
 weight: 50
 font_license: "设计师授权 (免费商用)"
-author_url: "/fonts/jiangxi-zhuokai" # 作者主页确实，用本站的URL
+author_url: "/fonts/jiangxi-zhuokai"
 download_url: "https://pan.baidu.com/s/1GHtBGetL3OthEhyY6_1zsg?pwd=qaxs"
 preview_image: "/images/fonts/jiangxi-zhuokai-preview.png"
 showToc: true

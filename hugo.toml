@@ -47,7 +47,7 @@ canonifyURLs = false
 
     [sitemap]
         changefreq = "weekly"
-        priority = 0.5
+        priority = 0.7
         filename = "sitemap.xml"
 
     [params.label]

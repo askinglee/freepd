@@ -4,10 +4,21 @@ date: 2026-01-22
 description: "杨任东竹石体是一款由杨任东先生创作并开源的字型。它完美融合了手写的温润与竹子的坚韧风格，且罕见地支持了从纤细到粗壮的 7 个字重，是文艺、古风与生活方式设计的绝佳选择。"
 slug: yrd-zhushi
 tags: ["可商用", "手写", "文艺", "古风", "设计"]
+keywords:
+  - 杨任东竹石体
+  - 杨任东竹石体下载
+  - 杨任东竹石体免费下载
+  - 竹石体
+  - 杨任东竹石体商用
+  - 杨任东竹石体可以商用吗
+  - 免费手写字体
+  - 文艺字体下载
+  - 古风字体下载
+  - 国风字体
 categories: ["人文楷体", "中文字体", "免费字体"]
 weight: 45
 font_license: "SIL Open Font License 1.1 (绝对免费)"
-author_url: "/fonts/yrd-zhushi" # 作者主页确实，用本站的URL
+author_url: "/fonts/yrd-zhushi"
 download_url: "https://pan.baidu.com/s/1Ffz4t7VypWiOiTWsWZTTmw?pwd=248s"
 preview_image: "/images/fonts/yrd-zhushi-preview.png"
 showToc: true

@@ -1,9 +1,19 @@
 ---
 title: "PDF 转 Word - 免费在线工具"
 date: 2026-01-26
-description: "【测试中心】基于前端技术实现的 PDF 转 Word 工具。当前支持文字提取保持，暂不支持复杂排版还原。100% 隐私安全。"
+description: "免费在线PDF转Word工具，完全本地处理，无需上传文件，100%隐私安全。将PDF文档快速转换为可编辑的Word文档。"
 slug: pdf-to-word
 tags: ["PDF工具", "PDF转Word", "PDF转DOCX", "PDF转Word在线工具", "PDF转Word免费工具", "PDF转Word无需上传", "PDF转Word隐私安全", "PDF转Word本地转换"]
+keywords:
+  - PDF转Word
+  - PDF转Word在线
+  - PDF转Word免费
+  - PDF转Word工具
+  - PDF转DOCX
+  - PDF转Word无需上传
+  - PDF转Word本地转换
+  - 免费PDF转换器
+  - 在线PDF工具
 categories: ["在线工具"]
 ---
 

@@ -4,6 +4,17 @@ date: 2026-01-22
 description: "思源黑体免费下载。支持简体中文、繁体中文、日文、韩文。由Google和Adobe合作开发，永久免费可商用，无版权风险。适合网页、印刷、PPT 与设计项目。"
 slug: source-han-sans
 tags: ["可商用", "黑体", "Google", "Adobe", "设计"]
+keywords:
+  - 思源黑体
+  - 思源黑体下载
+  - 思源黑体免费下载
+  - Source Han Sans
+  - Source Han Sans下载
+  - 思源黑体商用
+  - 思源黑体可以商用吗
+  - 谷歌免费字体
+  - Adobe免费字体
+  - 免费商用黑体
 categories: ["经典黑体", "中文字体", "免费字体"]
 weight: 10
 font_license: "SIL Open Font License 1.1 (绝对免费)"

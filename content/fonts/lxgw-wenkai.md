@@ -4,6 +4,17 @@ date: 2026-01-22
 description: "霞鹜文楷是一款基于 Klee One 改造的开源中文字体，融合了楷书的温润与硬笔书法的刚劲。它解决了传统楷体在屏幕上显示模糊的问题，是电子书阅读、诗歌文学排版的绝佳选择。"
 slug: lxgw-wenkai
 tags: ["可商用", "楷体", "开源", "人文", "设计", "阅读"]
+keywords:
+  - 霞鹜文楷
+  - 霞鹜文楷下载
+  - 霞鹜文楷免费下载
+  - LXGW WenKai
+  - 霞鹜文楷商用
+  - 霞鹜文楷可以商用吗
+  - 免费楷体下载
+  - 中文楷体下载
+  - 电子书字体
+  - Kindle字体
 categories: ["人文楷体", "中文字体", "免费字体"]
 weight: 35
 font_license: "SIL Open Font License 1.1 (绝对免费)"

@@ -1,9 +1,18 @@
 ---
 title: "PDF 合并 - 免费在线工具"
 date: 2026-01-22
-description: "快速将多份 PDF 文件合并为一个。纯本地浏览器处理，无需上传服务器，安全高效且完全免费。"
+description: "免费在线PDF合并工具，将多个PDF文件快速合并为一个。100%本地处理，无需上传服务器，安全高效。"
 slug: merge-pdf
 tags: ["PDF工具", "免费工具"]
+keywords:
+  - PDF合并
+  - 合并PDF
+  - PDF合并在线
+  - PDF合并免费
+  - 多个PDF合成一个
+  - PDF文件合并
+  - 在线PDF合并工具
+  - PDF整合
 categories: ["在线工具"]
 ---
 
