@@ -36,16 +36,12 @@ categories: ["在线工具"]
 
 <style>
 .pdf-tool-container {
-    margin: 2rem 0;
-    padding: 2rem;
-    border: 1px solid #e5e7eb;
-    border-radius: 16px;
-    background: #ffffff;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-.dark .pdf-tool-container {
-    background: #1f2937;
-    border-color: #374151;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
 }
 .drop-zone {
     border: 3px dashed #d1d5db;
@@ -276,78 +272,3 @@ categories: ["在线工具"]
     });
 </script>
 {{< /rawhtml >}}
-
-{{< rawhtml >}}
-<div class="related-tools" data-current="merge">
-    <h3>🛠️ 更多 PDF 工具</h3>
-    <div class="tool-links">
-        <a href="/tools/pdf-preview/" class="tool-link" id="link-preview">
-            <span class="icon">👁️</span>
-            <div class="info">
-                <span class="label">PDF 预览</span>
-                <span class="desc">直接在浏览器查看</span>
-            </div>
-        </a>
-        <a href="/tools/merge-pdf/" class="tool-link" id="link-merge">
-            <span class="icon">🔗</span>
-            <div class="info">
-                <span class="label">PDF 合并</span>
-                <span class="desc">多个文件合并为一个</span>
-            </div>
-        </a>
-        <a href="/tools/pdf-to-word/" class="tool-link" id="link-to-word">
-            <span class="icon">📝</span>
-            <div class="info">
-                <span class="label">PDF 转 Word <span style="font-size: 10px; color: #ef4444; border: 1px solid #ef4444; padding: 0 2px; border-radius: 4px;">测试</span></span>
-                <span class="desc">生成可编辑文字文档</span>
-            </div>
-        </a>
-        <a href="/tools/pdf-to-image/" class="tool-link" id="link-to-image">
-            <span class="icon">🖼️</span>
-            <div class="info">
-                <span class="label">PDF 转图片</span>
-                <span class="desc">导出高清无损图片集</span>
-            </div>
-        </a>
-        <a href="/tools/image-to-pdf/" class="tool-link" id="link-to-pdf">
-            <span class="icon">📄</span>
-            <div class="info">
-                <span class="label">图片转 PDF</span>
-                <span class="desc">多图一键合成文档</span>
-            </div>
-        </a>
-        <a href="/tools/compress-pdf/" class="tool-link" id="link-compress">
-            <span class="icon">📉</span>
-            <div class="info">
-                <span class="label">PDF 压缩</span>
-                <span class="desc">智能优化并减小体积</span>
-            </div>
-        </a>
-    </div>
-</div>
-
-<style>
-    .related-tools { margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #f3f4f6; }
-    .dark .related-tools { border-color: #374151; }
-    .related-tools h3 { font-size: 1.25rem; margin-bottom: 1.5rem; color: #374151; }
-    .dark .related-tools h3 { color: #d1d5db; }
-    .tool-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; }
-    .tool-link { display: flex; align-items: center; gap: 0.75rem; padding: 1rem; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; text-decoration: none !important; transition: all 0.2s; color: #4b5563 !important; }
-    .dark .tool-link { background: #374151; border-color: #4b5563; color: #f3f4f6 !important; }
-    .tool-link:hover { transform: translateY(-3px); border-color: #3b82f6; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); background: #fff; }
-    .dark .tool-link:hover { background: #1f2937; }
-    .tool-link .icon { font-size: 1.5rem; }
-    .tool-link .info { display: flex; flex-direction: column; gap: 0.25rem; }
-    .tool-link .label { font-weight: 700; font-size: 1rem; color: #111827; }
-    .dark .tool-link .label { color: #f3f4f6; }
-    .tool-link .desc { font-size: 0.8rem; color: #6b7280; font-weight: 400; }
-    .dark .tool-link .desc { color: #9ca3af; }
-    [data-current="preview"] #link-preview, [data-current="merge"] #link-merge, [data-current="to-image"] #link-to-image, [data-current="to-pdf"] #link-to-pdf, [data-current="compress"] #link-compress, [data-current="to-word"] #link-to-word { display: none; }
-</style>
-{{< /rawhtml >}}
-
-### 为什么选择我们的工具？
-
-- **隐私安全**：文件不上传服务器，在本地完成处理。
-- **完全免费**：无水印，无次数限制。
-- **极速处理**：直接在您的浏览器中运行。

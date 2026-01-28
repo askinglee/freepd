@@ -1,0 +1,289 @@
+{{- define "main" }}
+
+<!-- Search Header -->
+<section class="page-header-section search-header">
+    <div class="section-container">
+        <div class="page-header-content">
+            <h1>{{ .Title }}</h1>
+            <p>搜索免费商用字体和 PDF 工具</p>
+        </div>
+    </div>
+</section>
+
+<!-- Search Section -->
+<section class="search-section">
+    <div class="section-container">
+        <div class="search-box-wrapper">
+            <div class="search-input-group">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input id="search-input" type="text" placeholder="{{ .Params.placeholder | default "输入关键词搜索..." }}" autocomplete="off">
+            </div>
+        </div>
+        
+        <div id="search-results" class="search-results"></div>
+    </div>
+</section>
+
+<style>
+.search-header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+}
+
+.search-header .page-header-content h1,
+.search-header .page-header-content p {
+    color: white;
+}
+
+.search-section {
+    padding: 40px 0 80px;
+    background: #f5f5f5;
+    min-height: 60vh;
+}
+
+.search-box-wrapper {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.search-input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    color: #999;
+    pointer-events: none;
+}
+
+#search-input {
+    width: 100%;
+    padding: 16px 20px 16px 52px;
+    font-size: 1.125rem;
+    border: 2px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    background: white;
+    color: #1a1a1a;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+#search-input::placeholder {
+    color: #999;
+}
+
+.search-results {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.search-result-item {
+    display: block;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.search-result-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-color: rgba(59,130,246,0.3);
+}
+
+.search-result-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.search-result-item:hover .search-result-title {
+    color: #3b82f6;
+}
+
+.search-result-desc {
+    font-size: 0.9375rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.search-result-meta {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.search-result-tag {
+    padding: 4px 10px;
+    background: #f5f5f5;
+    color: #666;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.search-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.search-empty-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    color: #ccc;
+}
+
+.search-loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+</style>
+
+<!-- Fuse.js Search Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+        let fuse = null;
+        let pages = [];
+
+        // Show loading state
+        searchResults.innerHTML = '<div class="search-loading">正在加载搜索索引...</div>';
+
+        // Fetch search index
+        fetch('/index.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load search index');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Handle both array and object with items property
+                pages = Array.isArray(data) ? data : (data.items || []);
+                
+                if (pages.length === 0) {
+                    searchResults.innerHTML = '<div class="search-empty">搜索索引为空</div>';
+                    return;
+                }
+
+                fuse = new Fuse(pages, {
+                    keys: [
+                        { name: 'title', weight: 0.4 },
+                        { name: 'description', weight: 0.3 },
+                        { name: 'summary', weight: 0.2 },
+                        { name: 'content', weight: 0.1 },
+                        { name: 'tags', weight: 0.3 }
+                    ],
+                    threshold: 0.4,
+                    includeScore: true,
+                    ignoreLocation: true
+                });
+
+                // Clear loading state
+                searchResults.innerHTML = '';
+                
+                // Check for URL query param
+                const urlParams = new URLSearchParams(window.location.search);
+                const query = urlParams.get('q');
+                if (query) {
+                    searchInput.value = query;
+                    performSearch(query);
+                }
+            })
+            .catch(error => {
+                console.error('Search index load failed:', error);
+                searchResults.innerHTML = '<div class="search-empty"><p>搜索索引加载失败</p><p style="font-size: 0.875rem; margin-top: 8px;">请刷新页面重试</p></div>';
+            });
+
+        // Search function
+        function performSearch(query) {
+            if (!fuse) {
+                searchResults.innerHTML = '<div class="search-loading">搜索功能初始化中...</div>';
+                return;
+            }
+            
+            if (!query || !query.trim()) {
+                searchResults.innerHTML = '';
+                return;
+            }
+
+            const results = fuse.search(query.trim());
+            displayResults(results);
+        }
+
+        // Display results
+        function displayResults(results) {
+            if (!results || results.length === 0) {
+                searchResults.innerHTML = `
+                    <div class="search-empty">
+                        <svg class="search-empty-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.3-4.3"/>
+                        </svg>
+                        <p>没有找到相关结果</p>
+                        <p style="font-size: 0.875rem; margin-top: 8px;">请尝试其他关键词</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const html = results.slice(0, 10).map(result => {
+                const item = result.item;
+                let typeTag = '页面';
+                if (item.tags && Array.isArray(item.tags)) {
+                    if (item.tags.includes('PDF工具')) typeTag = 'PDF工具';
+                    else if (item.tags.includes('可商用')) typeTag = '免费字体';
+                }
+                
+                // Get description
+                let desc = item.description || item.summary || '';
+                if (!desc && item.content) {
+                    desc = item.content.substring(0, 150) + '...';
+                }
+                
+                return `
+                    <a href="${item.permalink || item.url || '#'}" class="search-result-item">
+                        <h3 class="search-result-title">${item.title || '无标题'}</h3>
+                        ${desc ? `<p class="search-result-desc">${desc}</p>` : ''}
+                        <div class="search-result-meta">
+                            <span class="search-result-tag">${typeTag}</span>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+
+            searchResults.innerHTML = html;
+        }
+
+        // Input event with debounce
+        let debounceTimer;
+        searchInput.addEventListener('input', function(e) {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                performSearch(e.target.value);
+            }, 300);
+        });
+
+        // Focus on load
+        searchInput.focus();
+    });
+</script>
+
+{{- end }}

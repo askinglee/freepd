@@ -3,7 +3,7 @@ title: "思源宋体 (Source Han Serif) - 谷歌/Adobe 再次联手，重塑中�
 date: 2026-01-22
 description: "思源宋体是 Adobe 与 Google 合作开发的开源宋体字轴。作为思源黑体的同伴，它专为长文阅读设计，在印刷和屏幕显示上都有极佳表现。完美支持简繁日韩，永久免费商用。"
 slug: source-han-serif
-tags: ["可商用", "衬线体", "Google", "Adobe", "设计", "正文"]
+tags: ["可商用", "宋体", "Google", "Adobe", "设计", "正文", "衬线"]
 categories: ["经典宋体", "中文字体", "免费字体"]
 weight: 15
 font_license: "SIL Open Font License 1.1 (绝对免费)"

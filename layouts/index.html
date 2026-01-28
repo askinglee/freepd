@@ -1,7 +1,316 @@
-{{- define "main" -}}
-<article class="first-entry">
-    <div class="post-content">
-        {{- .Content -}}
+{{- define "main" }}
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+    <!-- Background Decorations -->
+    <div class="hero-bg-decoration">
+        <div class="hero-bg-text hero-bg-text-1 animate-float-slow">Aa</div>
+        <div class="hero-bg-text hero-bg-text-2 animate-float-medium">字</div>
+        <div class="hero-bg-text hero-bg-text-3 animate-float-fast">文</div>
+        <div class="hero-gradient-1"></div>
+        <div class="hero-gradient-2"></div>
     </div>
-</article>
-{{- end -}}
+
+    <div class="hero-container">
+        <div class="hero-grid">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <div class="hero-title-group">
+                    <h1 class="hero-title">
+                        <span>免费字体下载</span><span class="dot">·</span><span>可商用</span><span class="dot">·</span><span>无套路</span>
+                    </h1>
+                    <p class="hero-subtitle">致力收集整理高质量商用资源，让创作更简单</p>
+                </div>
+                <p class="hero-description">500+款精选免费商用字体，无需注册，即下即用。所有字体明确标注授权来源，让设计创作零风险。</p>
+                
+                <div class="hero-buttons">
+                    <a href="#fonts" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        浏览全部字体
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        了解更多
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">500+</div>
+                        <div class="stat-label">免费字体</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">可商用</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">注册要求</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Floating Cards -->
+            <div class="hero-cards">
+                <!-- Card 1 - Source Han Sans -->
+                <div class="floating-card floating-card-1 animate-float-slow">
+                    <div class="preview">Aa</div>
+                    <div class="name">思源黑体</div>
+                    <div class="en">Source Han Sans</div>
+                    <div class="badges">
+                        <span class="badge badge-green">免费商用</span>
+                        <span class="badge badge-blue">7字重</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 - Source Han Serif -->
+                <div class="floating-card floating-card-2 animate-float-medium">
+                    <div class="preview" style="font-family: Georgia, serif;">Aa</div>
+                    <div class="name">思源宋体</div>
+                    <div class="en">Source Han Serif</div>
+                    <div class="badges">
+                        <span class="badge badge-green">免费商用</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 - Alibaba PuHuiTi -->
+                <div class="floating-card floating-card-3 animate-float-fast">
+                    <div class="preview">Aa</div>
+                    <div class="name">阿里巴巴普惠体</div>
+                    <div class="en">Alibaba PuHuiTi</div>
+                    <div class="badges">
+                        <span class="badge badge-green">免费商用</span>
+                        <span class="badge badge-purple">172语种</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features-section">
+    <div class="section-container">
+        <div class="section-header">
+            <h2>为什么选择 FreePD？</h2>
+            <p>我们不制作字体，只做清晰、可靠的整理与说明</p>
+        </div>
+
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon green">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>明确标注字体授权来源</h3>
+                <p>每款字体都清晰标注授权协议，商用无忧，让创作零风险</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                </div>
+                <h3>优先收录可商用免费字体</h3>
+                <p>精选500+款真正免费可商用的优质字体，持续更新</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+                <h3>无需注册，即下即用</h3>
+                <p>不打包、不诱导下载，页面轻量，打开即用</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{- $fonts := where site.RegularPages "Type" "fonts" }}
+{{- $fontCount := len $fonts }}
+
+<!-- FONT GRID SECTION -->
+<section id="fonts" class="fonts-section">
+    <div class="section-container">
+        <div class="section-header">
+            <h2>精选免费字体</h2>
+            <p>以下为本站精选的各类经典免费商用字体</p>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <a href="#fonts" class="filter-btn active">全部<span class="count">{{ $fontCount }}</span></a>
+            <a href="/tags/黑体/" class="filter-btn">经典黑体</a>
+            <a href="/tags/宋体/" class="filter-btn">经典宋体</a>
+            <a href="/tags/楷体/" class="filter-btn">人文楷体</a>
+            <a href="/tags/手写/" class="filter-btn">手写体</a>
+        </div>
+
+        <!-- Font Grid -->
+        <div class="font-grid">
+            {{- range $fonts }}
+            {{- $mainTitle := .Title }}
+            {{- $engName := "" }}
+            
+            {{- if (findRE " - " .Title) }}
+                {{- $mainTitle = index (split .Title " - ") 0 }}
+            {{- end }}
+            
+            {{- if (findRE "\\(.*\\)" $mainTitle) }}
+                {{- $engName = index (findRE "\\(([^)]+)\\)" $mainTitle) 0 | replaceRE "[\\(\\)]" "" }}
+                {{- $mainTitle = replaceRE "\\s*\\(.*\\)" "" $mainTitle | strings.TrimSpace }}
+            {{- end }}
+
+            <div class="font-card">
+                <div class="font-preview">
+                    <span>Aa</span>
+                </div>
+                <div class="font-info">
+                    <div class="font-header">
+                        <div class="font-title-group">
+                            <div class="font-title">{{ $mainTitle }}</div>
+                            <div class="font-en">{{ $engName | default .Slug }}</div>
+                        </div>
+                        <span class="badge badge-green">免费商用</span>
+                    </div>
+                    <p class="font-desc">{{ .Description | truncate 80 }}</p>
+                    <div class="font-tags">
+                        {{- range first 3 .Params.tags }}
+                        <span class="font-tag">{{ . }}</span>
+                        {{- end }}
+                    </div>
+                    <div class="font-actions">
+                        <a href="{{ .Permalink }}" class="btn-sm btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                            下载
+                        </a>
+                        <a href="{{ .Permalink }}" class="btn-sm btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                            预览
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{- end }}
+        </div>
+
+        <div class="view-all-btn">
+            <a href="/fonts/" class="btn btn-outline">
+                查看全部字体
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- PDF TOOLS SECTION -->
+<section id="tools" class="pdf-section">
+    <div class="section-container">
+        <div class="pdf-grid">
+            <!-- Left Content -->
+            <div class="pdf-content">
+                <h2>PDF 工具箱</h2>
+                <p>纯本地处理、保护隐私的 PDF 在线处理工具</p>
+                <p>所有操作都在您的浏览器中完成，文件不上传服务器，保护您的隐私安全。</p>
+                
+                <div class="pdf-features">
+                    <div class="pdf-feature">
+                        <div class="check-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span>隐私保护：文件不出内网，不上传云端</span>
+                    </div>
+                    <div class="pdf-feature">
+                        <div class="check-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span>极速响应：本地算力，无需排队</span>
+                    </div>
+                    <div class="pdf-feature">
+                        <div class="check-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span>完全免费：无广告，无次数限制</span>
+                    </div>
+                </div>
+
+                <a href="/tools/" class="link-blue">
+                    查看全部工具
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <!-- Right Tools Grid -->
+            <div class="tools-grid">
+                {{- $tools := where site.RegularPages "Type" "tools" }}
+                {{- range first 6 $tools }}
+                {{- $toolName := .Title }}
+                {{- if (findRE " - " .Title) }}
+                    {{- $toolName = index (split .Title " - ") 0 }}
+                {{- end }}
+                <a href="{{ .Permalink }}" class="tool-card">
+                    <div class="tool-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h4>{{ $toolName }}</h4>
+                    <p>{{ .Description | truncate 50 }}</p>
+                </a>
+                {{- end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+    <div class="section-container">
+        <div class="section-header">
+            <h2>关于 FreePD</h2>
+            <p>我们不制作字体，只做清晰、可靠的整理与说明</p>
+        </div>
+
+        <div class="commitments-grid">
+            <div class="commitment-item">
+                <div class="commitment-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>明确标注字体授权来源</span>
+            </div>
+            <div class="commitment-item">
+                <div class="commitment-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>优先收录可商用免费字体</span>
+            </div>
+            <div class="commitment-item">
+                <div class="commitment-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>不打包、不诱导下载</span>
+            </div>
+            <div class="commitment-item">
+                <div class="commitment-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>页面轻量，打开即用</span>
+            </div>
+            <div class="commitment-item">
+                <div class="commitment-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>持续更新，长期可用</span>
+            </div>
+        </div>
+
+        <div class="about-contact">
+            <p>如有版权问题，请联系我们，我们会第一时间处理</p>
+            <a href="mailto:contact@freepd.cn" class="contact-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                contact@freepd.cn
+            </a>
+        </div>
+    </div>
+</section>
+
+{{- end }}

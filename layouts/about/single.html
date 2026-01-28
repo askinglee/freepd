@@ -1,0 +1,68 @@
+{{- define "main" }}
+
+<!-- Page Header -->
+<section class="page-header-section about-header">
+    <div class="section-container">
+        <div class="page-header-content">
+            <h1>{{ .Title }}</h1>
+            {{- if .Description }}
+            <p>{{ .Description }}</p>
+            {{- end }}
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<section class="content-page-section">
+    <div class="section-container">
+        <div class="content-layout">
+            <!-- Main Content -->
+            <article class="content-article">
+                {{ .Content }}
+            </article>
+            
+            <!-- Sidebar (optional) -->
+            {{- if eq .File.BaseFileName "license" }}
+            <aside class="content-sidebar">
+                <div class="sidebar-nav">
+                    <h4>页面导航</h4>
+                    <nav class="toc-nav">
+                        <a href="#我们的立场">我们的立场</a>
+                        <a href="#关于版权来源">关于版权来源</a>
+                        <a href="#用户使用责任">用户使用责任</a>
+                        <a href="#侵权处理">侵权处理</a>
+                        <a href="#免责限制">免责限制</a>
+                    </nav>
+                </div>
+                
+                <div class="sidebar-card contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <h4>侵权联系</h4>
+                    <p>如果您发现侵权内容，请联系我们</p>
+                    <a href="mailto:legal@freepd.cn" class="btn btn-sm btn-primary">legal@freepd.cn</a>
+                </div>
+            </aside>
+            {{- end }}
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA (for about page) -->
+{{- if eq .File.BaseFileName "_index" }}
+<section class="about-cta-section">
+    <div class="section-container">
+        <div class="cta-card">
+            <h2>有任何问题？</h2>
+            <p>我们随时欢迎您的反馈与建议</p>
+            <a href="mailto:contact@freepd.cn" class="btn btn-primary btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                联系我们
+            </a>
+        </div>
+    </div>
+</section>
+{{- end }}
+
+{{- end }}

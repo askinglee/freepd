@@ -1,0 +1,144 @@
+{{- define "main" }}
+
+{{- $mainTitle := .Title }}
+{{- $engName := "" }}
+
+{{- if (findRE " - " .Title) }}
+    {{- $mainTitle = index (split .Title " - ") 0 }}
+{{- end }}
+
+{{- if (findRE "\\(.*\\)" $mainTitle) }}
+    {{- $engName = index (findRE "\\(([^)]+)\\)" $mainTitle) 0 | replaceRE "[\\(\\)]" "" }}
+    {{- $mainTitle = replaceRE "\\s*\\(.*\\)" "" $mainTitle | strings.TrimSpace }}
+{{- end }}
+
+<!-- Breadcrumb -->
+<section class="breadcrumb-section">
+    <div class="section-container">
+        <nav class="breadcrumb">
+            <a href="/">首页</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            <a href="/fonts/">字体库</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            <span>{{ $mainTitle }}</span>
+        </nav>
+    </div>
+</section>
+
+<!-- Font Hero -->
+<section class="font-hero-section">
+    <div class="section-container">
+        <div class="font-hero-grid">
+            <!-- Left: Preview -->
+            <div class="font-preview-card">
+                <div class="preview-main">Aa</div>
+                <div class="preview-subtitle">{{ $engName | default .Slug }}</div>
+            </div>
+            
+            <!-- Right: Info -->
+            <div class="font-info-card">
+                <div class="font-header">
+                    <h1>{{ $mainTitle }}</h1>
+                    {{- if $engName }}
+                    <p class="font-en-name">{{ $engName }}</p>
+                    {{- end }}
+                </div>
+                
+                <p class="font-description">{{ .Description }}</p>
+                
+                <div class="font-meta-tags">
+                    {{- range .Params.tags }}
+                    <span class="meta-tag">{{ . }}</span>
+                    {{- end }}
+                </div>
+                
+                <div class="font-actions-row">
+                    {{- if .Params.download_url }}
+                    <a href="{{ .Params.download_url }}" class="btn btn-primary btn-lg" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        立即下载
+                    </a>
+                    {{- end }}
+                    {{- if .Params.author_url }}
+                    <a href="{{ .Params.author_url }}" class="btn btn-outline btn-lg" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                        官网链接
+                    </a>
+                    {{- end }}
+                </div>
+                
+                <div class="font-license-box">
+                    <div class="license-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>授权信息</span>
+                    </div>
+                    <p class="license-text">{{ .Params.font_license | default "免费商用" }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Font Content -->
+<section class="font-content-section">
+    <div class="section-container">
+        <div class="content-grid">
+            <!-- Main Content -->
+            <div class="main-content">
+                <article class="content-card">
+                    {{ .Content }}
+                </article>
+                
+                <!-- Related Fonts -->
+                {{- $currentFont := . }}
+                {{- $relatedFonts := where .Site.RegularPages "Type" "fonts" }}
+                {{- $relatedFonts := where $relatedFonts "Slug" "ne" .Slug }}
+                {{- $relatedFonts := first 3 $relatedFonts }}
+                {{- if $relatedFonts }}
+                <div class="related-section">
+                    <h3>相关字体推荐</h3>
+                    <div class="related-grid">
+                        {{- range $relatedFonts }}
+                        {{- $relMainTitle := .Title }}
+                        {{- if (findRE " - " .Title) }}
+                            {{- $relMainTitle = index (split .Title " - ") 0 }}
+                        {{- end }}
+                        {{- if (findRE "\\(.*\\)" $relMainTitle) }}
+                            {{- $relMainTitle = replaceRE "\\s*\\(.*\\)" "" $relMainTitle | strings.TrimSpace }}
+                        {{- end }}
+                        <a href="{{ .Permalink }}" class="related-card">
+                            <div class="related-preview">Aa</div>
+                            <div class="related-info">
+                                <h4>{{ $relMainTitle }}</h4>
+                                <p>{{ .Description | truncate 50 }}</p>
+                            </div>
+                        </a>
+                        {{- end }}
+                    </div>
+                </div>
+                {{- end }}
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>字体信息</h4>
+                    <dl class="meta-list">
+                        {{- if .Params.author }}
+                        <dt>设计师</dt>
+                        <dd>{{ .Params.author }}</dd>
+                        {{- end }}
+                        {{- if .Params.font_license }}
+                        <dt>授权协议</dt>
+                        <dd>{{ .Params.font_license }}</dd>
+                        {{- end }}
+                        <dt>发布日期</dt>
+                        <dd>{{ .Date.Format "2006-01-02" }}</dd>
+                    </dl>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+{{- end }}

@@ -1,0 +1,99 @@
+{{- define "main" }}
+
+<!-- Page Header -->
+<section class="page-header-section tools-header">
+    <div class="section-container">
+        <div class="page-header-content">
+            <h1>PDF 工具箱</h1>
+            <p>{{ .Description | default "纯本地处理、保护隐私的 PDF 在线处理工具" }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- Tools Grid -->
+<section class="tools-grid-section">
+    <div class="section-container">
+        <div class="tools-intro">
+            <div class="intro-features">
+                <div class="intro-feature">
+                    <div class="intro-icon green">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="intro-text">
+                        <h3>隐私保护</h3>
+                        <p>文件不出内网，不上传云端</p>
+                    </div>
+                </div>
+                <div class="intro-feature">
+                    <div class="intro-icon blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <div class="intro-text">
+                        <h3>极速响应</h3>
+                        <p>本地算力，无需排队</p>
+                    </div>
+                </div>
+                <div class="intro-feature">
+                    <div class="intro-icon purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                    </div>
+                    <div class="intro-text">
+                        <h3>完全免费</h3>
+                        <p>无广告，无次数限制</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tools-grid">
+            {{- $pages := .RegularPages }}
+            {{- range $pages }}
+            {{- $toolName := .Title }}
+            {{- if (findRE " - " .Title) }}
+                {{- $toolName = index (split .Title " - ") 0 }}
+            {{- end }}
+            
+            <article class="tool-card-large">
+                <a href="{{ .Permalink }}" class="tool-card-link">
+                    <div class="tool-icon-large">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <div class="tool-info">
+                        <h3>{{ $toolName }}</h3>
+                        <p>{{ .Description | truncate 100 }}</p>
+                        <span class="tool-link-text">
+                            开始使用
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </span>
+                    </div>
+                </a>
+            </article>
+            {{- end }}
+        </div>
+    </div>
+</section>
+
+<!-- Info Section -->
+<section class="tools-info-section">
+    <div class="section-container">
+        <div class="info-card">
+            <h3>为什么使用我们的工具？</h3>
+            <ul class="info-list">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>所有操作都在您的浏览器中完成，文件不上传服务器</span>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>基于 WebAssembly 技术，处理速度快</span>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>无需注册，打开即用，保护您的隐私安全</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{{- end }}
