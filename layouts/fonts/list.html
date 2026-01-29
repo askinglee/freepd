@@ -36,7 +36,7 @@
         {{- range $name, $taxonomy := site.Taxonomies.categories }}
         {{- if and (ne $name "中文字体") (ne $name "免费字体") }}
         <li>
-            <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize | lower }}/">{{ $name }}</a>
+            <a href="{{ " /categories/" | relLangURL }}{{ $name | urlize | lower }}/">{{ $name }}</a>
         </li>
         {{- end }}
         {{- end }}
@@ -50,7 +50,7 @@
 </div>
 <!-- 分类导航结束 -->
 
-{{- $pages := union .RegularPages .Sections }}
+{{- $pages := (union .RegularPages .Sections).ByDate.Reverse }}
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
