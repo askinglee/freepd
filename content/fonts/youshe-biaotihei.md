@@ -77,7 +77,7 @@ tocOpen: true
 
 -   [庞门正道标题体](/fonts/pangmen-zhengdao-biaoti/)
 -   [站酷高端黑](/fonts/zcool-gdh/)
--   [优设好身体](/fonts/youshe-haoshenti/) (即将上线)
+-   [优设好身体](/fonts/youshe-haoshenti/)
 
 ---
 
