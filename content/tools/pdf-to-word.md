@@ -42,7 +42,11 @@ categories: ["在线工具"]
     <div id="status-msg" class="status-msg"></div>
 
     <div class="test-warning" style="margin-top: 2rem; padding: 1rem; background: #fff7ed; border: 1px solid #fdba74; border-radius: 8px; color: #9a3412; font-size: 0.9rem;">
-        <strong>⚠️ 功能测试中：</strong> 目前仅支持提取 PDF 中的<strong>文字内容</strong>并保持基本顺序。暂不支持图片提取、复杂表格布局维护以及艺术字体样式的 1:1 还原。
+        <strong>⚠️ 在线功能限制：</strong> 目前仅支持提取 PDF 中的<strong>文字内容</strong>并保持基本顺序。暂不支持图片提取、复杂表格布局维护以及艺术字体样式的 1:1 还原。
+    </div>
+
+    <div class="offline-ad" style="margin-top: 1rem; padding: 1rem; background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; color: #166534; font-size: 0.9rem;">
+        <strong>🚀 完整版离线工具：</strong> 完整版需要下载离线工具。下载地址：<a href="https://pan.baidu.com/s/1uMbPFY04Pwntm2an5yzQgw?pwd=2t7q" target="_blank" style="color: #15803d; font-weight: bold; text-decoration: underline;">点击下载 (提取码: 2t7q)</a>
     </div>
 </div>
 
@@ -211,7 +215,7 @@ categories: ["在线工具"]
         <a href="/tools/pdf-to-word/" class="tool-link" id="link-to-word">
             <span class="icon">📝</span>
             <div class="info">
-                <span class="label">PDF 转 Word <span style="font-size: 10px; color: #ef4444; border: 1px solid #ef4444; padding: 0 2px; border-radius: 4px;">测试</span></span>
+                <span class="label">PDF 转 Word</span>
                 <span class="desc">本地生成可编辑文档</span>
             </div>
         </a>

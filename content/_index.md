@@ -40,7 +40,7 @@ showBreadcrumbs: false
             <div class="cat-actions">
                 <a href="/tools/pdf-preview/" class="cat-btn tool-link">预览</a>
                 <a href="/tools/merge-pdf/" class="cat-btn tool-link">合并</a>
-                <a href="/tools/pdf-to-word/" class="cat-btn tool-link">转 Word <span style="font-size: 10px; margin-left: 4px; background: #ef4444; color: white; padding: 0 4px; border-radius: 4px;">测试</span></a>
+                <a href="/tools/pdf-to-word/" class="cat-btn tool-link">转 Word</a>
                 <a href="/tools/pdf-to-image/" class="cat-btn tool-link">PDF 转图</a>
                 <a href="/tools/image-to-pdf/" class="cat-btn tool-link">图转 PDF</a>
                 <a href="/tools/compress-pdf/" class="cat-btn tool-link">压缩</a>
@@ -234,7 +234,7 @@ showBreadcrumbs: false
 
 - [**PDF 预览**](/tools/pdf-preview/) —— 极致轻快的在线阅读体验
 - [**PDF 合并**](/tools/merge-pdf/) —— 快速将多个文件组合
-- [**PDF 转 Word**](/tools/pdf-to-word/) —— 提取文字并导出为 Word (测试)
+- [**PDF 转 Word**](/tools/pdf-to-word/) —— 提取文字并导出为 Word
 - [**PDF 转图片**](/tools/pdf-to-image/) —— 高质量转换，支持大图预览
 - [**PDF 压缩**](/tools/compress-pdf/) —— 智能瘦身，节省存储空间
 - [**图片转 PDF**](/tools/image-to-pdf/) —— 多图快速合成为文档

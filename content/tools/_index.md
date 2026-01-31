@@ -14,7 +14,7 @@ keywords:
 layout: "list"
 ---
 
-## 🛠️ PDF 工具箱 (测试版)
+## 🛠️ PDF 工具箱
 
 我们提供一系列基于 WebAssembly 和纯 JavaScript 的 PDF 处理工具。最大的卖点是：**所有处理都在本地完成，您的文件永远不会离开您的电脑。**
 
@@ -24,7 +24,7 @@ layout: "list"
 | :--- | :--- | :--- |
 | **[PDF 预览](pdf-preview/)** | ✅ 已上线 | 浏览器极速预览 PDF，无需安装阅读器。 |
 | **[PDF 合并](merge-pdf/)** | ✅ 已上线 | 多个 PDF 文件快速合并。 |
-| **[PDF 转 Word](pdf-to-word/)** | 🛠️ 测试中 | 生成可编辑的 Word 文档 (暂不支持排版)。 |
+| **[PDF 转 Word](pdf-to-word/)** | ✅ 已上线 | 生成可编辑的 Word 文档。 |
 | **[PDF 转图片](pdf-to-image/)** | ✅ 已上线 | 将每页 PDF 导出为高清图片。 |
 | **[图片转 PDF](image-to-pdf/)** | ✅ 已上线 | 将手机图片/截图一键合成为 PDF 文档。 |
 | **[PDF 压缩](compress-pdf/)** | ✅ 已上线 | 优化文件结构，显著减小 PDF 体积。 |

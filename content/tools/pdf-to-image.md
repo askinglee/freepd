@@ -407,7 +407,7 @@ categories: ["在线工具"]
         <a href="/tools/pdf-to-word/" class="tool-link" id="link-to-word">
             <span class="icon">📝</span>
             <div class="info">
-                <span class="label">PDF 转 Word <span style="font-size: 10px; color: #ef4444; border: 1px solid #ef4444; padding: 0 2px; border-radius: 4px;">测试</span></span>
+                <span class="label">PDF 转 Word</span>
                 <span class="desc">生成可编辑文字文档</span>
             </div>
         </a>
