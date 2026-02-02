@@ -1,5 +1,5 @@
 ---
-title: "免费商用字体下载 | 思源黑体/阿里巴巴普惠体等可商用中文字体 - FreePD"
+title: "freepd 完全免费的公共领域字体资源下载 |免费商用字体下载 | 思源黑体/阿里巴巴普惠体等可商用中文字体 - FreePD"
 description: "FreePD 提供免费可商用字体下载，包括思源黑体、阿里巴巴普惠体、霞鹜文楷等热门中文字体，以及免费在线 PDF 工具。所有字体明确标注授权信息，安全可商用，无版权风险。"
 keywords:
   - 免费字体
@@ -12,6 +12,7 @@ keywords:
   - 免费PDF工具
   - PDF转Word
   - free fonts
+  - freepd
 # layout: "single"
 showBreadcrumbs: false
 ---
