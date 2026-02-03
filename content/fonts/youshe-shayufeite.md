@@ -77,7 +77,7 @@ tocOpen: true
 
 -   [优设标题黑](/fonts/youshe-biaotihei/)
 -   [斗鱼追光体](/fonts/douyu-zhuiguang/)
--   [联盟起艺卢帅正锐黑](/fonts/lianmeng-lushai/) (即将上线)
+-   [联盟起艺卢帅正锐黑](/fonts/lianmeng-lushai/)
 
 ---
 

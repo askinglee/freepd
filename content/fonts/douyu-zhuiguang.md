@@ -77,7 +77,7 @@ tocOpen: true
 
 -   [优设标题黑](/fonts/youshe-biaotihei/)
 -   [优设鲨鱼菲特体](/fonts/youshe-shayufeite/)
--   [联盟起艺卢帅正锐黑](/fonts/lianmeng-lushai/) (即将上线)
+-   [联盟起艺卢帅正锐黑](/fonts/lianmeng-lushai/)
 
 ---
 
