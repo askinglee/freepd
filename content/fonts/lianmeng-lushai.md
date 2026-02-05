@@ -76,7 +76,7 @@ tocOpen: true
 
 -   [优设鲨鱼菲特体](/fonts/youshe-shayufeite/)
 -   [斗鱼追光体](/fonts/douyu-zhuiguang/)
--   [庞门正道粗书体](/fonts/pangmen-zhengdao-cushu/) (即将上线)
+-   [庞门正道粗书体](/fonts/pangmen-zhengdao-cushu/)
 
 ---
 
