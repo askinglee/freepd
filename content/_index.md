@@ -1,6 +1,6 @@
 ---
-title: "freepd 完全免费的公共领域字体资源下载 |免费商用字体下载 | 思源黑体/阿里巴巴普惠体等可商用中文字体 - FreePD"
-description: "FreePD 提供免费可商用字体下载，包括思源黑体、阿里巴巴普惠体、霞鹜文楷等热门中文字体，以及免费在线 PDF 工具。所有字体明确标注授权信息，安全可商用，无版权风险。"
+title: "freepd 免费公共领域音乐资源下载 | 完全免费的公共领域字体资源下载 |免费商用字体下载 | 思源黑体/阿里巴巴普惠体等可商用中文字体 - FreePD"
+description: "FreePD 提供免费可商用字体下载，包括思源黑体、阿里巴巴普惠体、霞鹜文楷等热门中文字体，以及免费在线 PDF 工具。所有字体明确标注授权信息，安全可商用，无版权风险。提供FreePD.com完全免费公共领域音乐资源下载"
 keywords:
   - 免费字体
   - 免费商用字体
@@ -13,11 +13,27 @@ keywords:
   - PDF转Word
   - free fonts
   - freepd
+  - 免费公共领域音乐
+  - 免费公共领域音乐下载
+  - 免费公共领域音乐资源
+  - 免费公共领域音乐资源下载
+  - freepd.com
+
 # layout: "single"
 showBreadcrumbs: false
 ---
 
 {{< rawhtml >}}
+<a href="https://freepd.freepd.cn/" class="notice-banner">
+    <div class="notice-content">
+        <span class="notice-tag">新内容</span>
+        <span class="notice-text">FreePD.cn 免费公共领域音乐资源下载已上线，完全来源于 FreePD.com</span>
+    </div>
+    <div class="notice-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </div>
+</a>
+
 <div class="homepage-hero">
     <div class="hero-header">
         <h1>免费字体下载 · 可商用 · 无套路</h1>
@@ -52,6 +68,70 @@ showBreadcrumbs: false
 </div>
 
 <style>
+/* Notification Banner Styles */
+.notice-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    color: white !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notice-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+    filter: brightness(1.1);
+}
+
+.notice-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notice-tag {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.notice-text {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.notice-arrow {
+    transition: transform 0.3s ease;
+}
+
+.notice-banner:hover .notice-arrow {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .notice-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1.25rem;
+    }
+    .notice-arrow {
+        align-self: flex-end;
+    }
+}
+
 .homepage-hero {
     margin: 1.5rem 0 3rem;
     padding: 2.5rem;

@@ -82,6 +82,11 @@ canonifyURLs = false
     weight = 30
 
 [[menu.main]]
+    name = "免费音乐资源"
+    url = "https://freepd.freepd.cn/"
+    weight = 35
+
+[[menu.main]]
     name = "关于"
     url = "/about/"
     weight = 40
