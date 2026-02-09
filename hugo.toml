@@ -1,6 +1,6 @@
 baseURL = 'https://freepd.cn/'
 languageCode = 'zh-cn'
-title = '免费字体下载 · 可商用 · 无套路 | FreePD'
+title = 'FreePD - 免费商用字体下载 | 免费公共领域音乐下载 | PDF在线工具'
 theme = 'PaperMod'
 
 # 增强本地调试支持
@@ -21,8 +21,8 @@ canonifyURLs = false
         ID = 'G-LWML4535XW'
 
     title = 'FreePD'
-    description = 'FreePD 提供高质量、可商用的免费字体下载，涵盖中文字体、英文字体与设计字体，适合设计师、开发者、自媒体与学生使用。'
-    keywords = ['免费字体', '免费商用字体', '中文字体下载', '英文字体下载', 'free fonts']
+    description = 'FreePD 提供 500+ 免费可商用字体下载（思源黑体、阿里巴巴普惠体、霞鹜文楷等），免费公共领域音乐资源（来源于 FreePD.com，可商用无需署名），以及免费在线 PDF 工具。所有资源明确标注授权信息，安全可商用。'
+    keywords = ['免费字体', '免费商用字体', '中文字体下载', '英文字体下载', '思源黑体下载', '免费公共领域音乐', '免费音乐素材', 'freepd']
     author = 'FreePD'
     
     # PaperMod specific params

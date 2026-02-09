@@ -36,7 +36,7 @@
         {{- range $name, $taxonomy := site.Taxonomies.categories }}
         {{- if and (ne $name "中文字体") (ne $name "免费字体") }}
         <li>
-            <a href="{{ " /categories/" | relLangURL }}{{ $name | urlize | lower }}/">{{ $name }}</a>
+            <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize | lower }}/">{{ $name }}</a>
         </li>
         {{- end }}
         {{- end }}
