@@ -76,7 +76,7 @@ tocOpen: true
 ## 你可能还会喜欢
 
 -   [优设标题黑](/fonts/youshe-biaotihei/)
--   [沐瑶软笔手写体](/fonts/muyao-ruanbi/) (即将上线)
+-   [沐瑶软笔手写体](/fonts/muyao-ruanbi/)
 -   [阿朱泡泡体](/fonts/azhu-paopao/) (即将上线)
 
 ---
