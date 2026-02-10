@@ -73,7 +73,7 @@ showBreadcrumbs: false
 <section class="stats-section">
     <div class="stat-item">
         <span class="stat-number">500+</span>
-        <span class="stat-label">精选免费字体</span>
+        <span class="stat-label">精选免费字体(更新中)</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
